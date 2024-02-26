@@ -1,0 +1,214 @@
+<div class={`projectsContainer ${$currentTheme}`}>
+  <div class={`projectWrapper ${$currentTheme}`}>
+    <h2 class={`projectH ${$currentTheme}`}>The things I've done</h2>
+    <div class={`projectList ${$currentTheme}`}>
+      {#if projects}
+        {#each projects as project}
+          <a href={`/projects/${project.url}`}>
+            <TinyView title={project.title} subtitle={project.subtitle}/>
+          </a>
+        {/each}
+      {/if}
+     
+    </div>
+  </div>
+</div>
+
+<script lang='ts'>
+  import ProjectView from '../../components/workPreview.svelte';
+  import TinyView from '../../components/tinyView.svelte';  
+  import { writable, type Writable } from "svelte/store";
+	import { theme } from "../../utils/theme";
+	import { projectsData, type ProjectData } from './projectsData';
+	import { onMount } from 'svelte';
+
+  let currentTheme:Writable<string> = writable($theme)
+  let projects: ProjectData[] = projectsData
+
+    theme.subscribe(value => {
+        currentTheme.set(value);
+        console.log("changed in component")
+    })
+
+  
+</script>
+
+<style>
+ /** Desktop and Mobile*/
+
+ @media (min-width: 768px) {
+  .dark.projectsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    transition: 0.4s ease-in-out;
+    min-height: 100vh;
+    
+    
+  }
+  .dark .projectWrapper {
+    display: flex;
+    width: 640px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .dark .projectList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .dark .projectH {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    transition: 0.4s ease-in-out;
+    font-size: 20px;
+  }
+
+  .dark a {
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+  }
+
+  /** Light */
+
+  .light.projectsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    min-height: 100vh;
+    background-color: white;
+    
+    
+  }
+  .light .projectWrapper {
+    display: flex;
+    width: 640px;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    padding: 20px;
+  }
+
+  .light .projectList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-in-out;
+    gap: 24px;
+  }
+
+
+  .light.projectH {
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .light a {
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+  }
+ }
+
+  /**Mobile */
+
+  @media (max-width:768px) {
+    .dark.projectsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    transition: 0.4s ease-in-out;
+    min-height: 100vh;
+    
+    
+  }
+  .dark .projectWrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .dark .projectList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .dark .projectH {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    transition: 0.4s ease-in-out;
+    font-size: 20px;
+  }
+
+  .dark a {
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+  }
+
+  /** Light */
+
+  .light.projectsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    min-height: 100vh;
+    background-color: white;
+    
+    
+  }
+  .light .projectWrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    padding: 20px;
+  }
+
+  .light .projectList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-in-out;
+    gap: 24px;
+  }
+
+
+  .light.projectH {
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .light a {
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+  }
+  }
+</style>
