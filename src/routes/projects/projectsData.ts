@@ -20,13 +20,13 @@ export const projectsData: ProjectData[] = [{
         {   image: "digitalThumb",     
         },
         {
-            paragraph: "I created very a community of programmers and designers consisting of 2000 people on Instagram",
+            paragraph: "I created a community of programmers and designers consisting of 2000 people on Instagram",
 
    
         },
         {
             headline: "The reason",
-            paragraph: "In 2021, I looked at Instagram and other resources but could not find any source that was producing good Uzbek tech content. During that period, we were still mainly indoors, so content was firing up in all networks. So I  wanted to create a community where people can share their knowledge, experience and ideas. I wanted to create a place where people can learn from each other and grow together. Plus, I wanted to consolidate my own knowledge by teaching others."
+            paragraph: "In 2021, I looked at Instagram and other resources, but could not find any source that was producing good Uzbek tech content. During that period, we were still mainly indoors, so content was firing up in all networks. So I  wanted to create a community where people can share their knowledge, experience and ideas. I wanted to create a place where people can learn from each other and grow together. Plus, I wanted to consolidate my own knowledge by teaching others."
 
         },
         {
