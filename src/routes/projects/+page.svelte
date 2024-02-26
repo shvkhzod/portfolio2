@@ -66,7 +66,7 @@
   }
 
   .dark .projectH {
-    text-align: center;
+    text-align: left;
     color: white;
     margin-top: 40px;
     transition: 0.4s ease-in-out;
@@ -110,7 +110,7 @@
 
 
   .light.projectH {
-    text-align: center;
+    text-align: left;
     color: black;
     margin-top: 40px;
     font-size: 20px;
@@ -155,7 +155,6 @@
   }
 
   .dark .projectH {
-    text-align: center;
     color: white;
     margin-top: 40px;
     transition: 0.4s ease-in-out;
@@ -198,8 +197,7 @@
   }
 
 
-  .light.projectH {
-    text-align: center;
+  .light.projectH { 
     color: black;
     margin-top: 40px;
     font-size: 20px;

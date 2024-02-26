@@ -1,7 +1,7 @@
 <div class={`mainContainer ${$currentTheme}`}>
   <div class={`mainWrapper ${$currentTheme}`}>
     <img src={Ava} alt="avatar" class="ava"/>
-    <h1>Hello, I'm Shakhzod. a software engineer and designer from Uzbekistan.</h1>
+    <h1>Hello, I'm Shakhzod, a software engineer and designer from Uzbekistan.</h1>
     <p class="subtitle">I love exploring what technology and art can bring together</p>
 
     <div class={`links ${$currentTheme}`}>

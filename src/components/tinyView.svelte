@@ -19,11 +19,15 @@
     })
 </script>
 <style>
-    .tinyView {
+    .dark.tinyView {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 8px;
+        padding: 20px;
+        background-color: #0d0d0d;
+        border-radius: 12px;
+        transition: 0.4s ease-in-out;
     }
 
       /** Dark */
@@ -43,6 +47,17 @@
         transition: 0.4s ease-in-out;
     }
     /** Light */
+
+    .light.tinyView {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 20px;
+        background-color: #eeeeee;
+        border-radius: 12px;
+        transition: 0.4s ease-in-out;
+    }
 
     .light .title {
         color: black;
