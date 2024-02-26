@@ -39,7 +39,12 @@ import { onMount } from 'svelte';
 import Sun from '$lib/images/sun.svg'
 import Moon from '$lib/images/moon.svg'
 import { writable, type Writable } from "svelte/store";
+import { inject } from '@vercel/analytics'
+import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
+
+inject({ mode:'production' });
+injectSpeedInsights();
 let currentTheme:Writable<string> = writable($theme)
 
 theme.subscribe(value => {
