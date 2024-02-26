@@ -282,6 +282,10 @@
    /*Mobile */
 
    @media (max-width: 768px) {
+
+    a {
+    text-decoration: none;
+  }
     .mainContainer{
     width: 100%;
     display: flex;
