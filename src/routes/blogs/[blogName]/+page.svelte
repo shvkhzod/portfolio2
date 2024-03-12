@@ -33,7 +33,6 @@
 
     theme.subscribe(value => {
         currentTheme.set(value);
-        console.log("changed in component")
     })
 
 
@@ -44,9 +43,12 @@
     onMount(async () => {
         var blogName = window.location.pathname.split('/')[2];
         blogData = blogsData.find(blog => blog.url === blogName);
-        console.log(blogData);
     });
 </script>
+
+<svelte:head>
+    <title>{blogData?.title}</title>
+</svelte:head>
 
 <style>
 
@@ -54,7 +56,6 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: center;
         background-color: black;
         min-height: 100vh;
@@ -114,8 +115,8 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: center;
+        min-height: 100vh;
         transition: 0.4s ease-in-out;
     }
 
