@@ -60,6 +60,7 @@
         background-color: black;
         min-height: 100vh;
         transition: 0.4s ease-in-out;
+        padding-bottom: 120px;
     }
 
     .dark .blogWrapper {
@@ -118,6 +119,7 @@
         justify-content: center;
         min-height: 100vh;
         transition: 0.4s ease-in-out;
+        padding-bottom: 120px;
     }
 
     .light .blogWrapper {
