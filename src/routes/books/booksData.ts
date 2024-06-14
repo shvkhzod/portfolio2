@@ -111,7 +111,7 @@ export const booksData: BooksData[] = [
     },
         {
             title: "Metamorphosis",
-            subtitle: "Very short book Franz Kafka, at first it was weird, but after finishing it, I got the overall message. No matter how much you did good for anyone, they will hate you if you are not useful to them",
+            subtitle: "Very short story by Franz Kafka, at first it was weird, but after finishing it, I got the overall message. No matter how much you did good for anyone, they will hate you if you are not useful to them",
             category: "Fiction",
             date: 2024,
         },

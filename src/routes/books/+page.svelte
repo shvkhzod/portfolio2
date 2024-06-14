@@ -145,7 +145,7 @@
       display: flex;
       flex-direction: column;
       width: 640px;
-      padding: 20px;
+      padding: 24px;
       transition: 0.4s ease-in-out;
     }
   
