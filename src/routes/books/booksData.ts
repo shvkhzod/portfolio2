@@ -6,6 +6,12 @@ export interface BooksData {
 }
 
 export const booksData: BooksData[] = [
+    {
+        title: "The Prince",
+        subtitle: "Practial book about politics by Nicollo Machiavelli. I liked how honest and clear he was in his writing",
+        category: "Politics",
+        date: 2024,
+    },
    {
     title: "Operating Systems: Three Easy Pieces",
     subtitle: "Nice book about OS, helped me to understand what is happening under the hood of my computer",
