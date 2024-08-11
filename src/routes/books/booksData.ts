@@ -6,6 +6,14 @@ export interface BooksData {
 }
 
 export const booksData: BooksData[] = [
+
+    {
+        title: "Sense and Sensibility",
+        subtitle: "Story of 2 sisters, one is sensible and the other is emotional. In short, it is about love, marriage and money. Solid 7/10",
+        category: "Fiction",
+        date: 2024,
+    },
+
     {
         title: "The Prince",
         subtitle: "Practial book about politics by Nicollo Machiavelli. I liked how honest and clear he was in his writing",
