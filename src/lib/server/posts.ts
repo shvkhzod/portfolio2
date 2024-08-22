@@ -1,12 +1,5 @@
-export interface Post {
-    title: string;
-    description: string;
-    date: string;
-    slug: string;
-    published: boolean;
-    next?: Post | null;
-    previous?: Post | null;
-}
+import type { Post } from "$lib/types";
+
 
 type GlobEntry = {
     metadata: Omit<Post, 'slug'>;
@@ -26,13 +19,11 @@ export const posts: Post[] = Object.entries(
 .map(([filepath, { metadata, default: component }]) => ({
     ...metadata,
     slug: generateSlug(filepath),
-    content: component.render().html
+    content: component.render().html,
+    categories: metadata.categories || [],
+    published: metadata.published !== false,
+    keywords: metadata.keywords || "",
 }))
 .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-.map((post, index, allPosts) => ({
-    ...post,
-    next: index > 0 ? allPosts[index - 1] : null,
-    previous: index < allPosts.length - 1 ? allPosts[index + 1] : null,
-}));
 
 console.log("Posts loaded:", posts.length);

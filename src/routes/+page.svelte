@@ -32,6 +32,31 @@
 	});
 </script>
 
+<svelte:head>
+    <title>Shakhzod Sharifov</title>
+    <meta name="description" content="Personal website of Shakhzod, a software engineer and designer from Uzbekistan exploring the intersection of technology and art.">
+    <meta name="keywords" content="software engineer, designer, Uzbekistan, technology, art, projects, books, thoughts">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:title" content="Shakhzod - Software Engineer and Designer">
+    <meta property="og:description" content="Personal website of Shakhzod, a software engineer and designer from Uzbekistan exploring the intersection of technology and art.">
+    <meta property="og:image" content="https://yourwebsite.com/path-to-your-profile-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourwebsite.com/">
+    <meta property="twitter:title" content="Shakhzod - Software Engineer and Designer">
+    <meta property="twitter:description" content="Personal website of Shakhzod, a software engineer and designer from Uzbekistan exploring the intersection of technology and art.">
+    <meta property="twitter:image" content="https://yourwebsite.com/path-to-your-profile-image.jpg">
+
+    <!-- Additional SEO tags -->
+    <link rel="canonical" href="https://yourwebsite.com/">
+    <meta name="author" content="Shakhzod">
+    <meta name="robots" content="index, follow">
+</svelte:head>
+
 <div class={`mainContainer ${$currentTheme}`}>
 	<div class={`mainWrapper ${$currentTheme}`}>
 		<img src={Ava} alt="avatar" class="ava" />

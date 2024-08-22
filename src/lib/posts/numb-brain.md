@@ -6,6 +6,7 @@ categories:
   - sveltekit
   - svelte
 published: true
+keywords: 'Numb Brain, Tik Tok Brain, Zombie, Phone Addiction, You are what you absorb, Digital Minimalism'
 ---
 
 "What is the most resilient parasite? Bacteria? A virus? An intestinal worm? An idea. Resilient... highly contagious. Once an idea has taken hold of the brain, it's almost impossible to eradicate. An idea that is fully formed, fully understood, that sticks. Right in there somewhere" - Cobb, Inception

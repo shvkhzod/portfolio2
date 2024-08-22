@@ -6,6 +6,7 @@ categories:
   - sveltekit
   - svelte
 published: true
+keywords: 'Expression, Identity, Authenticity, Original, Honesty, Originality'
 ---
 
 I think that many people respect a person, who has his own opinion and strength to express it, regarless of the fact that others might disagree with them.

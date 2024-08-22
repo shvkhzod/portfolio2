@@ -2,15 +2,25 @@
     import { onMount } from 'svelte';
     import type { PageData } from './$types';
     import { theme } from "../../../utils/theme";
-
+    import type { Post } from '$lib/types';
     export let data: PageData;
 
     $: currentTheme = $theme;
-    $: post = data.post;
+    $: post = data.post as Post;
+    console.log(post, "post")
+    
 </script>
+
 
 <svelte:head>
     <title>{post.title}</title>
+    <meta name="description" content={post.subtitle}>
+    <meta name="keywords" content={post.keywords}>
+    <meta name="author" content={post.author}>
+    <meta property="og:title" content={post.title}>
+    <meta property="og:description" content={post.subtitle}>
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content={post.date}>
 </svelte:head>
 
 <div class={`blogContainer ${currentTheme}`}>

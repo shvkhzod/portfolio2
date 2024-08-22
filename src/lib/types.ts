@@ -6,6 +6,9 @@ export type Post = {
 	subtitle: string
 	date: string
 	categories: Categories[]
+	keywords: string
+	author: "Shakhzod"
+	content: string;
 	published: boolean
 }
 

@@ -4,8 +4,6 @@ export interface Project {
     date: string;
     url: string;
     content: string;
-    next?: Project | null;
-    previous?: Project | null;
 }
 
 type GlobEntry = {
@@ -29,11 +27,5 @@ export const projects: Project[] = Object.entries(
     content: component.render().html
 }))
 .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-.map((project, index, allProjects) => ({
-    ...project,
-    next: index > 0 ? allProjects[index - 1] : null,
-    previous: index < allProjects.length - 1 ? allProjects[index + 1] : null,
-}));
-
 console.log("Projects loaded:", projects.length);
 console.log("Project URLs:", projects.map(p => p.url));

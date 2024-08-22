@@ -6,6 +6,7 @@ categories:
   - sveltekit
   - svelte
 published: true
+keywords: 'Creative, Avoid, Focus, Approach'
 ---
 
 Alright, let's be honest, creativity isn't always our default setting. As a developer and designer, I'm constantly on the hunt for inspiration, and most of the time it's just not there. But I've found some ways that helped me to overcome the creative block
