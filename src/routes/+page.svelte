@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Ava from '$lib/images/profile.webp';
+	import Ava from '$lib/images/newprofile.webp';
 	import GitHub from '$lib/images/github.svg';
 	import GitHubLight from '$lib/images/github-light.svg';
 	import Instagram from '$lib/images/instagram.svg';
@@ -172,7 +172,7 @@
 			transition: 0.4s ease-in-out;
 		}
 		.dark .ava {
-			width: 120px;
+			width: 132px;
 			transition: 0.4s ease-in-out;
 		}
 
@@ -255,7 +255,7 @@
 			transition: 0.4s ease-in-out;
 		}
 		.light .ava {
-			width: 120px;
+			width: 132px;
 			transition: 0.4s ease-in-out;
 		}
 
@@ -360,7 +360,7 @@
 			transition: 0.4s ease-in-out;
 		}
 		.dark .ava {
-			width: 100px;
+			width: 110px;
 			transition: 0.4s ease-in-out;
 		}
 
@@ -439,7 +439,7 @@
 			transition: 0.4s ease-in-out;
 		}
 		.light .ava {
-			width: 100px;
+			width: 110px;
 			transition: 0.4s ease-in-out;
 		}
 
