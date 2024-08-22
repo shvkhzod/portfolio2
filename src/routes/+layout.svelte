@@ -20,7 +20,7 @@
       <a href="/projects" >
         <p>Projects</p>
       </a>
-      <a href="/blogs" >
+      <a href="/thoughts" >
         <p  >Thoughts</p>
       </a>
     

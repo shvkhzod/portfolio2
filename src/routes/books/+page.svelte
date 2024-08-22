@@ -1,47 +1,29 @@
-<div class={`bookContainer ${$currentTheme}`}>
-    <div class={`bookWrapper ${$currentTheme}`}>
-        <h1 class={`title ${$currentTheme}`}>Books I have read so far</h1>
-        {#each sortedYears as year}
-           <div class={`bookHeader ${$currentTheme}`}>
-                <h2>{year}</h2>
-                <div class={`line ${$currentTheme}`}></div>
+<div class={`bookContainer ${currentTheme}`}>
+    <div class={`bookWrapper ${currentTheme}`}>
+        <h1 class={`title ${currentTheme}`}>{data.title}</h1>
+        {#each data.yearGroups as yearGroup}
+           <div class={`bookHeader ${currentTheme}`}>
+                <h2>{yearGroup.year}</h2>
+                <div class={`line ${currentTheme}`}></div>
             </div>
-            {#each groupedBooks[year] as book}
-            <div class={`book ${$currentTheme}`}>
+            {#each yearGroup.books as book}
+            <div class={`book ${currentTheme}`}>
                 <h3>{book.title}</h3>
                 <p>{book.subtitle}</p>
                 <p>Category: {book.category}</p>
             </div>
             {/each}
-      {/each}
+        {/each}
     </div>
 </div>
 
 <script lang="ts">
-	import { writable, type Writable } from "svelte/store";
-    import {booksData} from "./booksData";
-    import type {BooksData} from "./booksData";
-	import { theme } from "../../utils/theme";
+    import type { PageData } from './$types';
+    import {theme} from "../../utils/theme"
+    export let data: PageData;
+    console.log(data, "books data")
 
-    const groupedBooks = booksData.reduce((acc: Record<number, BooksData[]>, book) => {
-    const year = book.date;
-    if (!acc[year]) {
-      acc[year] = [];
-    }
-    acc[year].push(book);
-    return acc;
-  }, {});
-
-  const sortedYears = Object.keys(groupedBooks)
-    .map(Number)
-    .sort((a, b) => b - a);
-
-  //theme
-  let currentTheme:Writable<string> = writable($theme);
-    theme.subscribe(value => {
-    currentTheme.set(value);
-    console.log("changed in component")
-    })
+    $: currentTheme = $theme;
 </script>
 
 

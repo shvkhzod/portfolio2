@@ -9,26 +9,26 @@
 	import TinyView from '../components/tinyView.svelte';
 	import { theme } from '../utils/theme';
 	import { writable, type Writable } from 'svelte/store';
-	import { type ProjectData, projectsData } from '../routes/projects/projectsData';
-	import { type BlogData, blogsData } from './blogs/blogsData';
 	import { onMount } from 'svelte';
 	import { booksData, type BooksData } from './books/booksData';
-	let currentTheme: Writable<string>;
-	let projects: ProjectData[];
-	let ideas: BlogData[];
-	let books: BooksData[]
+	import type { PageData } from './$types';
 
-	currentTheme = writable('light');
+	export let data: PageData;
+
+	let currentTheme: Writable<string> = writable('light');
+	let books: BooksData[];
+
+	$: projects = data.projects;
+	$: blogs = data.posts;
+
+	console.log(projects, blogs)
 
 	theme.subscribe((value) => {
 		currentTheme.set(value);
 	});
 
 	onMount(() => {
-		projects = projectsData;
-		ideas = [blogsData[0], blogsData[1], blogsData[2]];
 		books = [booksData[0], booksData[6], booksData[11]];
-		
 	});
 </script>
 
@@ -57,7 +57,7 @@
 
 		<div class={`list ${$currentTheme}`}>
 			{#if projects}
-				{#each projects as project}
+				{#each projects.slice(0, 3) as project}
 					<a href={`projects/${project.url}`}>
 						<TinyView title={project.title} subtitle={project.subtitle} />
 					</a>
@@ -71,33 +71,31 @@
 		</div>
 		
 		<div class={`list ${$currentTheme}`}>
-			{#if books}
-				{#each books as book}
-					<a href={`books}`}>
+			<div class={`list ${currentTheme}`}>
+				{#each data.books as book}
+					<a href={`/books#${book.title.replace(/\s+/g, '-').toLowerCase()}`}>
 						<TinyView title={book.title} subtitle={book.subtitle} />
 					</a>
 				{/each}
-			{/if}
+			</div>
 		</div>
 
 		<div class={`newSectionHeader ${$currentTheme}`}>
 			<h2 class={`headerSec ${$currentTheme}`}>Thoughts</h2>
-			<a href="blogs" class={`seeAll ${$currentTheme}`}>See All</a>
+			<a href="thoughts" class={`seeAll ${$currentTheme}`}>See All</a>
 		</div>
 
-	
 		<div class={`list ${$currentTheme}`}>
-			{#if ideas}
-				{#each ideas as idea}
-					<a href={`blogs/${idea.url}`}>
-						<TinyView title={idea.title} subtitle={idea.subtitle} />
+			{#if blogs}
+				{#each blogs.slice(0, 3) as blog}
+					<a href={`thoughts/${blog.slug}`}>
+						<TinyView title={blog.title} subtitle={blog.subtitle} />
 					</a>
 				{/each}
 			{/if}
-  </div>
+		</div>
+	</div>
 </div>
-</div>
-
 <style>
 	/*Desktop and laptop */
 	@media (min-width: 768px) {
@@ -166,6 +164,7 @@
 		.dark .newSectionHeader {
 			width: 100%;
 			margin-top: 56px;
+			margin-bottom: 24px;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
@@ -191,7 +190,6 @@
 		}
 
 		.dark .list {
-			margin-top: 24px;
 			display: flex;
 			flex-direction: column;
 			transition: 0.4s ease-in-out;
@@ -249,6 +247,7 @@
 		.light .newSectionHeader {
 			width: 100%;
 			margin-top: 56px;
+			margin-bottom: 24px;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
@@ -274,7 +273,6 @@
 		}
 
 		.light .list {
-			margin-top: 24px;
 			display: flex;
 			flex-direction: column;
 			gap: 24px;

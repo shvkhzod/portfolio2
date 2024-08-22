@@ -1,29 +1,13 @@
-import type { ProjectData } from "../projectsData";
-import  {projectsData}  from "../projectsData";
+import type { PageLoad } from './$types';
 
-interface LoadParams {
-    params: {
-        projectName: string;
-    };
-
-}
-
-
-export function load({params}: LoadParams) {
-    const {projectName} = params;
-    console.log(projectName)
-
-    const projectData: ProjectData | undefined = projectsData.find(project => project.url === projectName);
-
-    if(projectData === undefined) {
+export const load: PageLoad = async ({ data }) => {
+    if (data && data.project) {
         return {
-            status: 404
-        }
-    } else {
-        return {
-            props: {
-                projectData
-            }
-        }
+            project: data.project,
+            layout: {
+                fullWidth: true,
+            },
+        };
     }
-}
+    return { project: null };
+};

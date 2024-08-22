@@ -25,7 +25,7 @@
         flex-direction: column;
         gap: 8px;
         padding: 20px;
-        background-color: #0d0d0d;
+        background-color: #1a1a1a;
         border-radius: 12px;
         transition: 0.4s ease-in-out;
     }

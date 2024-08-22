@@ -1,51 +1,37 @@
-<div class={`projectContainer ${$currentTheme}`}>
-    <div class={`projectWrapper ${$currentTheme}`}>
-        {#if projectData}
-            <h1 class={`title ${$currentTheme}`}>{projectData.title}</h1>
-            <p class={`date ${$currentTheme}`}>{projectData.date}</p>
-            <div class={`projectContent ${$currentTheme}`}>
-                {#each projectData.content as block}
-                    <div class={`block ${$currentTheme}`}>
-                        {#if block.headline}
-                        <h1 class="headline">{block.headline}</h1>
-                        {/if}
+<svelte:head>
+    {#if project}
+        <title>{project.title}</title>
+    {/if}
+</svelte:head>
 
-                        {#if block.paragraph}
-                        <p>{block.paragraph}</p>
-                        {/if}
-
-                        
-                        {#if block.image}
-                            <img src={`/images/${block.image}.webp`} alt="content image"/>
-                        {/if}
-                    
-                    </div>
-                {/each}
-            </div>
-        {/if}
+<div class={`projectContainer ${currentTheme}`}>
+    <div class={`projectWrapper ${currentTheme}`}>
+       {#if project} 
+       <h1 class={`title ${currentTheme}`}>{project.title}</h1>
+       <p class={`date ${currentTheme}`}>{project.date}</p>
+       <div class={`projectContent ${currentTheme}`}>
+            {@html project.content}
+       </div>
+       {/if}
     </div>
 </div>
 
 <script lang='ts'>
     import { onMount } from 'svelte';
-    import type {ProjectData} from '../projectsData';
-    import {projectsData} from '../projectsData';
-    let projectData: ProjectData | undefined;
-
     import { writable, type Writable } from "svelte/store";
 	import { theme } from "../../../utils/theme";
+	import type { PageData } from '../[projectName]/$types';
 
-    let currentTheme:Writable<string> = writable($theme)
 
-    theme.subscribe(value => {
-        currentTheme.set(value);
-        console.log("changed in component")
-    })
+    export let data: PageData;
+    $: currentTheme = $theme;
+    $: project = data.project;
+
+    console.log(data)
 
     onMount(async () => {
+        console.log(data, 'no')
         var projectName = window.location.pathname.split('/')[2];
-        projectData = projectsData.find(project => project.url === projectName);
-        console.log(projectData);
     });
 </script>
 
@@ -59,6 +45,14 @@
         background-color: black;
         transition: 0.4s ease-in-out;
 
+    }
+
+    .dark.projectContent p {
+        color: white;
+        opacity: 0.75;
+        font-size: 16px;
+        margin-top: 8px;
+        transition: 0.4s ease-in-out;
     }
 
     .dark .projectWrapper {
@@ -77,9 +71,9 @@
         transition: 0.4s ease-in-out;
     }
 
-    .dark .headline {
+    .dark:global( h2) {
         color: white;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 500;
         transition: 0.4s ease-in-out;
     }
@@ -101,14 +95,13 @@
 
  
 
-    .dark .block p {
-        margin-top: 8px;
+    .dark :global(.projectContent p) {
         color: white;
         opacity: 0.65;
         font-size: 16px;
         transition: 0.4s ease-in-out;
     }
-    .dark img {
+    .dark :global(.projectContent > p > img ){
         margin-top: 16px;
         width: 100%;
         border-radius: 28px;
@@ -175,11 +168,16 @@
         font-size: 16px;
         transition: 0.4s ease-in-out;
     }
-    .light img {
+    .light :global(.projectContent > p > img ){
         margin-top: 16px;
         width: 100%;
         border-radius: 28px;
         height: auto;
         transition: 0.4s ease-in-out;
+    }
+
+    .light :global( h2) {
+        font-size: 24px;
+        font-weight: 550;
     }
 </style>

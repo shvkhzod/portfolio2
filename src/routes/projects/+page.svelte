@@ -1,7 +1,20 @@
-<div class={`projectsContainer ${$currentTheme}`}>
-  <div class={`projectWrapper ${$currentTheme}`}>
-    <h2 class={`projectH ${$currentTheme}`}>The things I've done</h2>
-    <div class={`projectList ${$currentTheme}`}>
+<script lang="ts">
+  import TinyView from "../../components/tinyView.svelte"
+  import { theme } from "../../utils/theme";
+  import type { PageData } from './$types';
+
+  export let data: PageData;
+
+  $: currentTheme = $theme;
+  $: projects = data.projects;
+
+  console.log(data)
+</script>
+
+<div class={`projectsContainer ${currentTheme}`}>
+  <div class={`projectWrapper ${currentTheme}`}>
+    <h2 class={`projectH ${currentTheme}`}>The things I've done</h2>
+    <div class={`projectList ${currentTheme}`}>
       {#if projects}
         {#each projects as project}
           <a href={`/projects/${project.url}`}>
@@ -9,29 +22,9 @@
           </a>
         {/each}
       {/if}
-     
     </div>
   </div>
 </div>
-
-<script lang='ts'>
-  import ProjectView from '../../components/workPreview.svelte';
-  import TinyView from '../../components/tinyView.svelte';  
-  import { writable, type Writable } from "svelte/store";
-	import { theme } from "../../utils/theme";
-	import { projectsData, type ProjectData } from './projectsData';
-	import { onMount } from 'svelte';
-
-  let currentTheme:Writable<string> = writable($theme)
-  let projects: ProjectData[] = projectsData
-
-    theme.subscribe(value => {
-        currentTheme.set(value);
-        console.log("changed in component")
-    })
-
-  
-</script>
 
 <style>
  /** Desktop and Mobile*/
@@ -45,8 +38,6 @@
     background-color: black;
     transition: 0.4s ease-in-out;
     min-height: 100vh;
-    
-    
   }
   .dark .projectWrapper {
     display: flex;
@@ -88,8 +79,6 @@
     transition: 0.4s ease-in-out;
     min-height: 100vh;
     background-color: white;
-    
-    
   }
   .light .projectWrapper {
     display: flex;
@@ -108,8 +97,7 @@
     gap: 24px;
   }
 
-
-  .light.projectH {
+  .light .projectH {
     text-align: left;
     color: black;
     margin-top: 40px;
@@ -134,8 +122,6 @@
     background-color: black;
     transition: 0.4s ease-in-out;
     min-height: 100vh;
-    
-    
   }
   .dark .projectWrapper {
     display: flex;
@@ -176,8 +162,6 @@
     transition: 0.4s ease-in-out;
     min-height: 100vh;
     background-color: white;
-    
-    
   }
   .light .projectWrapper {
     display: flex;
@@ -196,8 +180,7 @@
     gap: 24px;
   }
 
-
-  .light.projectH { 
+  .light .projectH { 
     color: black;
     margin-top: 40px;
     font-size: 20px;
