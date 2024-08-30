@@ -3,14 +3,21 @@
     import type { PageData } from './$types';
     import { theme } from "../../../utils/theme";
     import type { Post } from '$lib/types';
+    import { browser } from '$app/environment';
+
     export let data: PageData;
 
     $: currentTheme = $theme;
     $: post = data.post as Post;
-    console.log(post, "post")
-    
-</script>
 
+    let content: string;
+
+    onMount(() => {
+        if (browser) {
+            content = post.content;
+        }
+    });
+</script>
 
 <svelte:head>
     <title>{post.title}</title>
@@ -29,7 +36,11 @@
             <h1 class={`title ${currentTheme}`}>{post.title}</h1>
             <p class={`date ${currentTheme}`}>{post.date}</p>
             <div class="blogContent">
-                {@html post.content}
+                {#if browser}
+                    {@html content}
+                {:else}
+                    <p>Loading...</p>
+                {/if}
             </div>
         {/if}
     </div>
@@ -88,7 +99,6 @@
         color: white;
         opacity: 0.75;
         font-size: 16px;
-
         transition: 0.4s ease-in-out;
     }
 
@@ -96,6 +106,7 @@
         width: 100%;
         margin-top: 20px;
         transition: 0.4s ease-in-out;
+        border-radius: 16px;
     }
 
     /* Light */
@@ -157,5 +168,6 @@
         width: 100%;
         margin-top: 20px;
         transition: 0.4s ease-in-out;
+        border-radius: 16px;
     }
 </style>

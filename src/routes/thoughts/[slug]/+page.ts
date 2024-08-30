@@ -1,18 +1,20 @@
 	// src/routes/blog/[slug]/page.ts
 
-import type { Load } from "@sveltejs/kit";
+import type { PageLoad } from './$types';
 
-    export const load:Load = async ({data}) => {
-        // load the markdown file based on slug
-       if(data) {
-        const component = await import(`../../../lib/posts/${data.post.slug}.md`);
+export const load: PageLoad = async ({ data, fetch }) => {
+    // Prefetch next and previous posts
+    const prefetchNextPost = fetch('/api/posts/next/' + data.post.slug).then(r => r.json());
+    const prefetchPrevPost = fetch('/api/posts/prev/' + data.post.slug).then(r => r.json());
 
-        return {
-            post: data.post,
-            component: component.default,
-            layout: {
+    return {
+        post: data.post,
+        layout: {
             fullWidth: true,
-            },
-        };
-       }
+        },
+        streamed: {
+            nextPost: prefetchNextPost,
+            prevPost: prefetchPrevPost
+        }
     };
+};
