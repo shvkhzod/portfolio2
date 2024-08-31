@@ -1,11 +1,11 @@
-export type Categories = 'sveltekit' | 'svelte'
+
 
 export type Post = {
 	title: string
 	slug: string
 	subtitle: string
 	date: string
-	categories: Categories[]
+	category: string,
 	keywords: string
 	author: "Shakhzod"
 	content: string;

@@ -2,9 +2,7 @@
 title: 'Why University?'
 subtitle: 'My thoughts on why I chose to study at university, even though I do not need a degree to become a software engineer'
 date: '07 Oct 2023'
-categories:
-  - sveltekit
-  - svelte
+category: 'Education'
 published: true
 keywords: 'Computer Science Student, Why Study at University, Uni, Reasons to study, Asian student, Uni Pressure'
 ---

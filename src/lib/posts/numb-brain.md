@@ -2,9 +2,7 @@
 title: 'Numb Brain'
 subtitle: 'How we are becoming zombies'
 date: '12 March 2024'
-categories:
-  - sveltekit
-  - svelte
+category: 'General'
 published: true
 keywords: 'Numb Brain, Tik Tok Brain, Zombie, Phone Addiction, You are what you absorb, Digital Minimalism'
 ---

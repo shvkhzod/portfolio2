@@ -10,25 +10,19 @@
 	import { theme } from '../utils/theme';
 	import { writable, type Writable } from 'svelte/store';
 	import { onMount } from 'svelte';
-	import { booksData, type BooksData } from './books/booksData';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
 
 	let currentTheme: Writable<string> = writable('light');
-	let books: BooksData[];
 
 	$: projects = data.projects;
 	$: blogs = data.posts;
-
+	$: books = data.books;
 	console.log(projects, blogs)
 
 	theme.subscribe((value) => {
 		currentTheme.set(value);
-	});
-
-	onMount(() => {
-		books = [booksData[0], booksData[6], booksData[11]];
 	});
 </script>
 
@@ -97,7 +91,7 @@
 		
 		<div class={`list ${$currentTheme}`}>
 			<div class={`list ${currentTheme}`}>
-				{#each data.books as book}
+				{#each books as book}
 					<a href={`/books#${book.title.replace(/\s+/g, '-').toLowerCase()}`}>
 						<TinyView title={book.title} subtitle={book.subtitle} />
 					</a>

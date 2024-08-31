@@ -1,31 +1,64 @@
-<div class={`bookContainer ${currentTheme}`}>
-    <div class={`bookWrapper ${currentTheme}`}>
-        <h1 class={`title ${currentTheme}`}>{data.title}</h1>
-        {#each data.yearGroups as yearGroup}
-           <div class={`bookHeader ${currentTheme}`}>
+<div class={`bookContainer ${$currentTheme}`}>
+    <div class={`bookWrapper ${$currentTheme}`}>
+        <h1 class={`title ${$currentTheme}`}>{data.title}</h1>
+        
+        <div class={`filters ${$currentTheme}`}>
+            <select bind:value={selectedCategory} class={$currentTheme}>
+                <option value="">All Categories</option>
+                {#each categories as category}
+                    <option value={category}>{category}</option>
+                {/each}
+            </select>
+            <select bind:value={selectedRating} class={$currentTheme}>
+                <option value={0}>All Ratings</option>
+                {#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as rating}
+                    <option value={rating}>{rating}+ Stars</option>
+                {/each}
+            </select>
+        </div>
+
+        {#each filteredYearGroups as yearGroup}
+            <div class={`bookHeader ${$currentTheme}`}>
                 <h2>{yearGroup.year}</h2>
-                <div class={`line ${currentTheme}`}></div>
+                <div class={`line ${$currentTheme}`}></div>
             </div>
             {#each yearGroup.books as book}
-            <div class={`book ${currentTheme}`}>
-                <h3>{book.title}</h3>
-                <p>{book.subtitle}</p>
-                <p>Category: {book.category}</p>
-            </div>
+                <div class={`book ${$currentTheme}`}>
+                    <h3>{book.title}</h3>
+                    <p>{book.subtitle}</p>
+                    <p>Category: {book.category}</p>
+                    <p>Rating: {book.rating}/10</p>
+                </div>
             {/each}
         {/each}
     </div>
 </div>
 
 <script lang="ts">
+    import { theme } from '../../utils/theme';
+    import { writable, type Writable } from 'svelte/store';
     import type { PageData } from './$types';
-    import {theme} from "../../utils/theme"
+
     export let data: PageData;
-    console.log(data, "books data")
 
-    $: currentTheme = $theme;
+    let currentTheme: Writable<string> = writable('light');
+    
+    let categories: string[] = [...new Set(data.yearGroups.flatMap(yg => yg.books.map(b => b.category)))];
+    let selectedCategory = '';
+    let selectedRating = 0;
+
+    $: filteredYearGroups = data.yearGroups.map(yg => ({
+        ...yg,
+        books: yg.books.filter(book => 
+            (selectedCategory === '' || book.category === selectedCategory) &&
+            (selectedRating === 0 || book.rating >= selectedRating)
+        )
+    })).filter(yg => yg.books.length > 0);
+
+    theme.subscribe((value) => {
+        currentTheme.set(value);
+    });
 </script>
-
 
 <style>
     .dark.bookContainer {
@@ -184,4 +217,33 @@
       text-decoration: none;
       transition: 0.4s ease-in-out;
     }
+
+    .filters {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    select {
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 550;
+        transition: 0.4s ease-in-out;
+    }
+
+    .dark select {
+        color: black;
+        background-color: white;
+        border: none;
+    }
+
+    .light select {
+        color: white;
+        background-color: black;
+        border: none;
+    }
+
   </style>
+

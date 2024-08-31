@@ -5,6 +5,7 @@ interface Book {
     title: string;
     category: string;
     subtitle: string;
+    rating: number; // Make rating a required field
 }
 
 interface YearGroup {
@@ -27,11 +28,16 @@ function parseMarkdown(content: string): { title: string; yearGroups: YearGroup[
             currentYear = { year: parseInt(line.slice(2)), books: [] };
         } else if (line.startsWith('### ')) {
             if (currentBook) currentYear?.books.push(currentBook as Book);
-            currentBook = { title: line.slice(3).trim() };
+            currentBook = { title: line.slice(3).trim(), category: 'Uncategorized', subtitle: '', rating: 0 };
         } else if (line.startsWith('Category: ')) {
             currentBook!.category = line.slice(10).trim();
         } else if (line.startsWith('Subtitle: ')) {
             currentBook!.subtitle = line.slice(9).trim();
+        } else if (line.startsWith('Rating: ')) {
+            const ratingMatch = line.match(/(\d+(\.\d+)?)\/10/);
+            if (ratingMatch) {
+                currentBook!.rating = parseFloat(ratingMatch[1]);
+            }
         }
     }
     if (currentBook) currentYear?.books.push(currentBook as Book);
