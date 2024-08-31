@@ -3,7 +3,7 @@ title: 'Expression and Identity'
 subtitle: 'The struggle in having independent thoughts and sharing them'
 date: '27 April 2024'
 category: 'General'
-published: true
+published: true 
 keywords: 'Expression, Identity, Authenticity, Original, Honesty, Originality'
 ---
 

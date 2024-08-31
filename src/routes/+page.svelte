@@ -53,19 +53,19 @@
 
 <div class={`mainContainer ${$currentTheme}`}>
 	<div class={`mainWrapper ${$currentTheme}`}>
-		<img src={Ava} alt="avatar" class="ava" />
+		<img src={Ava} alt="avatar" class="ava" loading="lazy" />
 		<h1>Hello, I'm Shakhzod, a software engineer and designer from Uzbekistan.</h1>
 		<p class="subtitle">I love exploring what technology and art can bring together</p>
 
 		<div class={`links ${$currentTheme}`}>
 			<a href="https://github.com/shvkhzod">
-				<img src={$currentTheme == 'dark' ? GitHub : GitHubLight} alt="github" />
+				<img src={$currentTheme == 'dark' ? GitHub : GitHubLight} alt="github" loading="lazy" />
 			</a>
 			<a href="mailto:thedigitaluzb@gmail.com?subject=Work">
-				<img src={$currentTheme == 'dark' ? Mail : MailLight} alt="gmail" />
+				<img src={$currentTheme == 'dark' ? Mail : MailLight} alt="gmail"loading="lazy" />
 			</a>
 			<a href="https://www.instagram.com/shvkhzood/">
-				<img src={$currentTheme == 'dark' ? Instagram : InstagramLight} alt="Instagram" />
+				<img src={$currentTheme == 'dark' ? Instagram : InstagramLight} alt="Instagram" loading="lazy" />
 			</a>
 		</div>
 

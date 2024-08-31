@@ -1,4 +1,4 @@
-<div class={`bookContainer ${$currentTheme}`}>
+<div class={`bookContainer ${$currentTheme}`}> 
     <div class={`bookWrapper ${$currentTheme}`}>
         <h1 class={`title ${$currentTheme}`}>{data.title}</h1>
         

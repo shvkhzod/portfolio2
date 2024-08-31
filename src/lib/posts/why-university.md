@@ -4,7 +4,7 @@ subtitle: 'My thoughts on why I chose to study at university, even though I do n
 date: '07 Oct 2023'
 category: 'Education'
 published: true
-keywords: 'Computer Science Student, Why Study at University, Uni, Reasons to study, Asian student, Uni Pressure'
+keywords: 'Computer Science Student, Why Study at University, Uni, Reasons to study, Asian student, Uni Pressure' 
 ---
 
 I am a student at LSBU, studying BSc Computer Science. Before LSBU, I studied at SNU, South Korea, but I dropped out after 2 years due to corona virus. So in a field, where nobody really asks for a degree, why did I decide to go to university?

@@ -21,10 +21,10 @@
         // Implement your date formatting logic here
         return new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
     }
-</script>
+</script> 
 
-<svelte:head>
-    <title>Blog Posts</title>
+<svelte:head> 
+    <title>Blog Posts </title>
 </svelte:head>
 
 <div class={`blogsWrap ${$currentTheme}`}>

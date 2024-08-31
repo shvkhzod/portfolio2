@@ -2,9 +2,9 @@
 title: 'I Tried Cursor AI'
 subtitle: 'Are We Being Replaced by AI?'
 date: '30 August 2024'
-category: 'Programming'
+category: 'Programming '
 published: true
-keywords: 'Cursor AI, Artificial Intelligence, AI, Programming, AI replacing programmers, Future of coding'
+keywords: 'Cursor AI, Artificial Intelligence, AI, Programming, AI replacing programmers, Future of coding'  
 ---
 
 ![Cursor AI](/images/cursor.webp)
