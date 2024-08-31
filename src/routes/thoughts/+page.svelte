@@ -12,7 +12,7 @@
     $: filteredPosts = selectedCategory 
         ? data.posts.filter(post => post.category === selectedCategory)
         : data.posts;
-
+        
     theme.subscribe((value) => {
         currentTheme.set(value);
     });
