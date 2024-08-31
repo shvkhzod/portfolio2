@@ -2,7 +2,7 @@
     import { theme } from '../../utils/theme';
     import { writable, type Writable } from 'svelte/store';
     import type { PageData } from './$types';
-    import BlogItem from '../../components/BlogItem.svelte'; // Make sure this import is correct
+    import BlogItem from '../../components/blogItem.svelte'
 
     export let data: PageData;
 
