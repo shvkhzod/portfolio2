@@ -17,7 +17,7 @@ messed up .
 I am feeling bad, take today as example. I literally did nothing and it's 15th. It means I almost wasted another month. No growth. I am 20. Incapable of doing something valuable or important
 
 08:20 PM Jan 31, 2022  
-So immature
+So immature, what's wrong with me?
 
 05:56 PM Feb 11, 2022  
 It is happening a lot
@@ -65,7 +65,7 @@ I know I deserve even worse
 I have problems with self-acceptance, any type of media that includes me is strongly analyzed before putting it on the Net. I guess I am shy and coward too.
 
 10:09 PM December 5, 2022  
-What's wrong with me? 
+I deserve it, I screwed it . 
 
 03:56 PM  February 16, 2023
 I somehow understand now what's like to feel lonely among people
