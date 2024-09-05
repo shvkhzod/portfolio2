@@ -2,6 +2,11 @@
 
 ## 2024
 
+### Adibus Soniy
+Category: Non-Fiction
+16 page book that explains the core things that young learner should know
+Rating: 9.5/10
+
 ### Sense and Sensibility
 Category: Fiction
 Subtitle: Story of 2 sisters, one is sensible and the other is emotional. In short, it is about love, marriage and money.
@@ -37,8 +42,8 @@ Category: Fiction
 Subtitle: I liked this book, even though it was a bit long. A great exploration of human relationships, meaning of life, religion and philosophy
 Rating: 8.5/10
 
-### Antigragile
-Category: Fiction  
+### Antifragile
+Category: Non-Fiction  
 Subtitle: Reminded myself of the importance of discomfort, mistakes and failures in life. The only way to grow is to expose yourself to these things
 Rating: 8/10
 
