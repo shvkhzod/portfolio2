@@ -4,7 +4,7 @@
 
 ### Adibus Soniy
 Category: Non-Fiction
-16 page book that explains the core things that young learner should know
+Subtitle: 16 page book that explains the core things that young learner should know
 Rating: 9.5/10
 
 ### Sense and Sensibility
