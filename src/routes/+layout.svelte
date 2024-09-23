@@ -1,8 +1,10 @@
 <div class="navContainer">
   <div class="navWrapper">
-    <p class="logo">
-      <a href="/">shakhzod</a>
+    <a href="/">
+      <p class="logo">
+      shakhzod
     </p>
+    </a>
 
     <div class="list">
       <button 
@@ -26,7 +28,11 @@
 </div>
 
 <div class="appContainer">
-  <slot/>
+  <PageTransition url={$page.url.pathname}>
+    <main>
+      <slot />
+    </main>
+  </PageTransition>
 </div>
 
 <script lang="ts">
@@ -39,6 +45,9 @@ import { writable, type Writable } from "svelte/store";
 import { inject } from '@vercel/analytics'
 import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 import { preloadData } from '$app/navigation';
+import PageTransition from "$lib/PageTransition.svelte";
+import { page } from "$app/stores";
+
 
 inject({ mode: 'production' });
 injectSpeedInsights();
@@ -50,6 +59,15 @@ theme.subscribe(value => {
     document.documentElement.setAttribute('data-theme', value);
   }
 })
+
+// function preloadRoute(event: MouseEvent, href: string) {
+//   if (!event.ctrlKey && !event.metaKey) {
+//     event.preventDefault();
+//     preloadData(href).then(() => {
+//       window.location.href = href;
+//     });
+//   }
+// }
 
 onMount(() => {
   // Preload data for common routes
@@ -75,7 +93,10 @@ onMount(() => {
   .appContainer {
     background-color: var(--bg-color);
     color: var(--text-color);
+    overflow-x: hidden;
+    position: relative;
     transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+    min-height: calc(100vh - 60px); /* Adjust based on your navbar height */
   }
 
   .navContainer {

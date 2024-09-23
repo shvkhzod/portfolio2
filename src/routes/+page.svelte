@@ -36,14 +36,14 @@
     <meta property="og:url" content="https://yourwebsite.com/">
     <meta property="og:title" content="Shakhzod - Software Engineer and Designer">
     <meta property="og:description" content="Software engineer and designer from the Heart of Silk Road">
-    <meta property="og:image" content="/images/preview.png">
+    <meta property="og:image" content="/static/images/preview.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/images/preview.png">
     <meta property="twitter:title" content="Shakhzod - Software Engineer and Designer">
     <meta property="twitter:description" content="Software engineer and designer from the Heart of Silk Road.">
-    <meta property="twitter:image" content="https://yourwebsite.com/path-to-your-profile-image.jpg">
+    <meta property="twitter:image" content="/static/images/preview.png">
 
     <!-- Additional SEO tags -->
     <link rel="canonical" href="https://shakhzod.co/">
