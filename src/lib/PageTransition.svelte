@@ -17,14 +17,14 @@
     
     function transition(node: Element, { isEntering }: { isEntering: boolean }) {
       return {
-        duration: 800,
+        duration: 600,
         css: (t: number) => {
           if (!$isNewNavigation) return '';
           
           const eased = quintOut(t);
           const opacity = isEntering ? eased : 1 - eased;
-          const scale = isEntering ? 0.98 + 0.02 * eased : 1;
-          const blur = isEntering ? 2 - 2 * eased : 0;
+          const scale = isEntering ? 0.95 + 0.05 * eased : 1;
+          const blur = isEntering ? 5 - 5 * eased : 0;
           
           return `
             opacity: ${opacity};
