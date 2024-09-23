@@ -54,7 +54,7 @@
 <div class={`mainContainer ${$currentTheme}`}>
 	<div class={`mainWrapper ${$currentTheme}`}>
 		<img src={Ava} alt="avatar" class="ava" loading="lazy" />
-		<h1>Hello, I'm Shakhzod, a software engineer and designer from from the Heart of Silk Road.</h1>
+		<h1>Hello, I'm Shakhzod, a software engineer and designer from the Heart of Silk Road.</h1>
 		<p class="subtitle">I love exploring what technology and art can bring together</p>
 
 		<div class={`links ${$currentTheme}`}>
