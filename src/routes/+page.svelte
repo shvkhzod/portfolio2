@@ -28,15 +28,15 @@
 
 <svelte:head>
     <title>Shakhzod Sharifov</title>
-    <meta name="description" content="Personal website of Shakhzod, a software engineer and designer from Uzbekistan exploring the intersection of technology and art.">
+    <meta name="description" content="Software engineer and designer from the Heart of Silk Road">
     <meta name="keywords" content="software engineer, designer, Uzbekistan, technology, art, projects, books, thoughts">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourwebsite.com/">
     <meta property="og:title" content="Shakhzod - Software Engineer and Designer">
-    <meta property="og:description" content="Personal website of Shakhzod, a software engineer and designer from Uzbekistan exploring the intersection of technology and art.">
-    <meta property="og:image" content="https://yourwebsite.com/path-to-your-profile-image.jpg">
+    <meta property="og:description" content="Software engineer and designer from the Heart of Silk Road">
+    <meta property="og:image" content="/images/preview.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -54,7 +54,7 @@
 <div class={`mainContainer ${$currentTheme}`}>
 	<div class={`mainWrapper ${$currentTheme}`}>
 		<img src={Ava} alt="avatar" class="ava" loading="lazy" />
-		<h1>Hello, I'm Shakhzod, a software engineer and designer from Uzbekistan.</h1>
+		<h1>Hello, I'm Shakhzod, a software engineer and designer from from the Heart of Silk Road.</h1>
 		<p class="subtitle">I love exploring what technology and art can bring together</p>
 
 		<div class={`links ${$currentTheme}`}>
