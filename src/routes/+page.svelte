@@ -40,13 +40,13 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourwebsite.com/">
+    <meta property="twitter:url" content="/images/preview.png">
     <meta property="twitter:title" content="Shakhzod - Software Engineer and Designer">
-    <meta property="twitter:description" content="Personal website of Shakhzod, a software engineer and designer from Uzbekistan exploring the intersection of technology and art.">
+    <meta property="twitter:description" content="Software engineer and designer from the Heart of Silk Road.">
     <meta property="twitter:image" content="https://yourwebsite.com/path-to-your-profile-image.jpg">
 
     <!-- Additional SEO tags -->
-    <link rel="canonical" href="https://yourwebsite.com/">
+    <link rel="canonical" href="https://shakhzod.co/">
     <meta name="author" content="Shakhzod">
     <meta name="robots" content="index, follow">
 </svelte:head>
