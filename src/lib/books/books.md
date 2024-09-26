@@ -2,6 +2,16 @@
 
 ## 2024
 
+### The Elements of Computing Systems: Building Modern Computer from First Principles
+Category: Programming
+Subtitle: Helped me to see overall picture of whole computer, need to read it some time later
+Rating: 6.5/10
+
+### Courage to Write
+Category: Non-Fiction
+Subtitle: The best book I have read about writing so far in my life
+Rating: 8/10
+
 ### Adibus Soniy
 Category: Non-Fiction
 Subtitle: 16 page book that explains the core things that young learner should know
