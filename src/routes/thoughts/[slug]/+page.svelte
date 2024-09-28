@@ -62,7 +62,7 @@
         margin-top: 100px;
         display: flex;
         width: 640px;
-        padding: 20px;
+        padding: 20px 28px;
         flex-direction: column;
         transition: 0.4s ease-in-out;
     }
@@ -124,7 +124,7 @@
         margin-top: 100px;
         display: flex;
         width: 640px;
-        padding: 20px;
+        padding: 20px 28px;
         flex-direction: column;
         transition: 0.4s ease-in-out;
     }
