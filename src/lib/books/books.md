@@ -2,18 +2,29 @@
 
 ## 2024
 
+### The Sense of Style: The Thinking Person's Guide in Writing
+Category: Writing
+Subtitle: List of recommendations for writing technical and Non-fiction things
+Rating: 6/10
+
+
+### Writing With Style: The Economist Guide
+Category: Writing
+Subtitle: Helped me to understand how to write copies that people like reading
+Rating: 7.5/10
+
 ### The Elements of Computing Systems: Building Modern Computer from First Principles
 Category: Programming
 Subtitle: Helped me to see overall picture of whole computer, need to read it some time later
 Rating: 6.5/10
 
 ### Courage to Write
-Category: Non-Fiction
+Category: Writing
 Subtitle: The best book I have read about writing so far in my life
 Rating: 8/10
 
 ### Adibus Soniy
-Category: Non-Fiction
+Category: Non-fiction
 Subtitle: 16 page book that explains the core things that young learner should know
 Rating: 9.5/10
 
@@ -31,6 +42,7 @@ Rating: 8/10
 Category: Programming
 Subtitle: Nice book about OS, helped me to understand what is happening under the hood of my computer
 Rating: 7/10
+
 ### Why We Can't Just Print More Money
 Category: Economics
 Subtitle: Simple and short explanation of economics, written in a very casual way so that everyone can understand it.
@@ -39,6 +51,7 @@ Rating: 6/10
 ### Metamorphosis
 Category: Fiction
 Subtitle: Very short story by Franz Kafka, at first it was weird, but after finishing it, I got the overall message. No matter how much you did good for anyone, they will hate you if you are not useful to them
+Rating: 7.5/10
 
 ### Why Poor Countries Are Poor
 Category: Economics
@@ -53,7 +66,7 @@ Subtitle: I liked this book, even though it was a bit long. A great exploration 
 Rating: 8.5/10
 
 ### Antifragile
-Category: Non-Fiction  
+Category: Non-fiction  
 Subtitle: Reminded myself of the importance of discomfort, mistakes and failures in life. The only way to grow is to expose yourself to these things
 Rating: 8/10
 
@@ -77,7 +90,7 @@ Subtitle: For those who struggle with math, I found some effective techniques to
 Rating: 5/10
 
 ### Nobody Reads Your Sh*t
-Category: Non-fiction
+Category: Writing
 Subtitle: Well, not that great book, at least for me. Outline for writing good stories was the only thing I found useful in this books
 Rating: 4/10
 
@@ -134,7 +147,7 @@ Rating: 3.5/10
 Category: Non-fiction
 Subtitle: It was my 2nd attempt to read this book, and I finally finished it. Now I understand the message of the book. Showed how our focus and productivity were destroyed in this modern world and how to get it back
 Rating: 6.5/10
-### How To Become A StraightA Student
+### How To Become A Straight A Student
 Category: Non-fiction
 Subtitle: Fine book about getting good grades in college by Cal Newport
 Rating: 3.5/10
@@ -156,16 +169,16 @@ Category: Fiction
 Subtitle: Interesting and a bit sad story by Chuck Palahniuk
 Rating: 6.5/10
 ### Contagious
-Category: Non-Fiction
+Category: Non-fiction
 Subtitle: Very good and practical book about virality
 Rating: 7/10
 ### Benjamin Franklin
-Category: Non-Fiction
+Category: Non-fiction
 Subtitle: It was interesting to learn about the life of Benjamin Franklin. How he helped shape the modern United States by bringing together all the people
 Rating: 7/10
 
 ### The Man's Search For Meaning
-Category: Non-Fiction
+Category: Non-fiction
 Subtitle: A book written by a person who survived the World War II concentration camp. How he managed to stay alive in the moments that many wished to be dead. A book that makes you feel grateful for your life
 Rating: 6.5/10
 
@@ -179,7 +192,7 @@ Category: Non-fiction
 Subtitle: Not that great book, seemed very basic idea to me
 Rating: 5/10
 ### Everybody Writes
-Category: Non-fiction
+Category: Writing
 Subtitle: I learnt about copywriting, content marketing and writing in general. Good resource
 Rating: 6.5/10
 ### From Zero To One
@@ -187,8 +200,8 @@ Category: Non-fiction
 Subtitle: Good insights on how to build a successful startup
 Rating: 4/10
 ### Tribes of Mentors
- Category: Non-fiction
- Subtitle: Didn't like it much
+Category: Non-fiction
+Subtitle: Didn't like it much
 Rating: 2/10
 ### Product Design
 Category: Non-fiction
