@@ -96,8 +96,7 @@
     }
 
     .dark :global(.blogContent p) {
-        color: white;
-        opacity: 0.75;
+        color: #d8d8d8;
         font-size: 16px;
         transition: 0.4s ease-in-out;
     }
@@ -158,8 +157,7 @@
     }
 
     .light :global(.blogContent p) {
-        color: black;
-        opacity: 0.75;
+        color: #555555;
         font-size: 16px;
         transition: 0.4s ease-in-out;
     }

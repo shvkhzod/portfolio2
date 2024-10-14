@@ -97,7 +97,6 @@
 
     .dark :global(.projectContent p) {
         color: white;
-        opacity: 0.65;
         font-size: 16px;
         transition: 0.4s ease-in-out;
     }
@@ -161,10 +160,9 @@
 
  
 
-    .light .block p {
+    .light :global(.block p){
         margin-top: 8px;
-        color: black;
-        opacity: 0.65;
+        color: #525252;
         font-size: 16px;
         transition: 0.4s ease-in-out;
     }
