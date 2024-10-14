@@ -9,7 +9,7 @@ keywords: 'Hyper-personalisastion, Personalisation, social medias'
 ![image](/images/bubble.webp)
 Once upon a time Internet was a place to discover new things. But now it is no different than a TV. Algorithms, not curiosity,curate our online world. This makes me wonder whether it is possible to preserve the initial promise of the Net?
 
-I am going to skip the cliche talk about what is Internet and how it became very popular. Having said that, what is algorithms? It is few lines of code that decides a lot of things. 
+I am going to skip the cliche talk about what is Internet and how it became very popular. Having said that, what is algorithms? It is few lines of code that decide a lot of things. 
 
 Take Instagram: you think about buying sneakers, and suddenly your feed fills with the latest models. It goes beyond that. When you search anything on Google, the results can be different depending on your location, gender, job,your favorite color. These algorithms show you what you like and support. Plus they show you the things they want to show(and it is not only ads). You only get to see one side of the story, the side which algorithms are trying to normalize
 
