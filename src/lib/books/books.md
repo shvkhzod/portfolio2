@@ -2,6 +2,15 @@
 
 ## 2024
 
+### The Lily of The Valley
+Subtitle: Good writing style, but I didn't enjoy the plot. It is about how women sacrifice themselves for others
+Rating: 4/10
+
+### The Cat And Racket
+Category: Fiction
+Subtitle: Short story about simple and beautiful girl Augustine - who gets unlucky in marriage
+Rating: 9/10
+
 ### The Sense of Style: The Thinking Person's Guide in Writing
 Category: Writing
 Subtitle: List of recommendations for writing technical and Non-fiction things
