@@ -112,6 +112,11 @@ Category: Non-fiction
 Subtitle: Very practical, understandable and useful resource. Written by a professional in the field, real life examples from her own work for Google, Spotify ,etc
 Rating: 5.5/10
 
+### Hackers and Painters
+Category: Non-fiction
+Subtitle: Collection of essay by Paul Graham on various topics
+Rating: 7.5/10
+
 ### Great Mental Models
 Category: Non-fiction
 Subtitle: Good book that made me to rethink my decision making process.
