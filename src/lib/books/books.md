@@ -2,6 +2,10 @@
 
 ## 2024
 
+### Sane Society
+Category: Non-fiction
+Subtitle: A great analysis of man's unhappiness despite the huge rise of economics 
+Rating: 8/10
 ### The Lily of The Valley
 Subtitle: Good writing style, but I didn't enjoy the plot. It is about how women sacrifice themselves for others
 Rating: 4/10
