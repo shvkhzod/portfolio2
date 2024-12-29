@@ -38,10 +38,12 @@
     import { theme } from '../../utils/theme';
     import { writable, type Writable } from 'svelte/store';
     import type { PageData } from './$types';
+	import { onDestroy, onMount } from 'svelte';
 
     export let data: PageData;
 
     let currentTheme: Writable<string> = writable('light');
+    let destroyScroll: (() => void) | undefined;
     
     let categories: string[] = [...new Set(data.yearGroups.flatMap(yg => yg.books.map(b => b.category)))];
     let selectedCategory = '';
@@ -58,9 +60,14 @@
     theme.subscribe((value) => {
         currentTheme.set(value);
     });
+
 </script>
 
 <style>
+
+:global(html) {
+        scroll-behavior: auto !important;
+    }
     .dark.bookContainer {
       width: 100%;
       display: flex;
