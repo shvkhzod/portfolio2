@@ -2,6 +2,22 @@
 
 ## 2024
 
+### The Death of Ivan Ilyich
+Category: Fiction
+Subtitle: Story about a person dying, the last moment thoughts and regrets
+Rating: 6/10
+
+
+### Don Quixote
+Category: Fiction
+Subtitle: It deals with unrealistic perfection that fiction worlds bring. 
+Rating: 7/10
+
+### Predictably Irrational
+Category: Economics
+Subtitle: More about irrational everyday behaviour in simple terms
+Rating: 6.5/10
+
 ### Sane Society
 Category: Non-fiction
 Subtitle: A great analysis of man's unhappiness despite the huge rise of economics 
@@ -14,6 +30,11 @@ Rating: 4/10
 Category: Fiction
 Subtitle: Short story about simple and beautiful girl Augustine - who gets unlucky in marriage
 Rating: 9/10
+
+### White Nights
+Category: Fiction
+Subtitle: Short story about love triangle. Showed the main character as too desperate
+Rating: 5/10
 
 ### The Sense of Style: The Thinking Person's Guide in Writing
 Category: Writing
