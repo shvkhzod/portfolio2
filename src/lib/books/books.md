@@ -1,5 +1,27 @@
 # Books I have read so far
 
+## 2025
+
+### Muqadimmah
+Category: Non-fiction
+Subtitle: An overview of history, religion, economics, politics and science of 14th century
+Rating: 6.5
+
+### The Art of Doing Science and Engineering
+Category: Non-fiction
+Subtitle: Great ideas from Richard Hamming himself. Many of his predictions are very close, especially about AI
+Rating: 6.5/10
+
+### Oleg Tinkov: I am like everyone else
+Category: Non-fiction
+Subtitle: Biography of russian millioner Oleg Tinkov, a very straightforward and honest person
+Rating: 6.5/10
+
+### First You Write A sentence
+Category: Writing
+Subtitle: Another gem about writing
+Rating: 7.5/10
+
 ## 2024
 
 ### The Death of Ivan Ilyich
