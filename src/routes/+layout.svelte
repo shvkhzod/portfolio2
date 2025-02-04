@@ -2,7 +2,7 @@
   <div class="navWrapper">
     <a href="/">
       <p class="logo">
-      shakhzod
+      sh.
     </p>
     </a>
 
@@ -18,7 +18,10 @@
         {/if}
       </button>
       <a href="/projects">
-        <p>Projects</p>
+        <p>Works</p>
+      </a>
+      <a href="/photography">
+        <p>Lens</p>
       </a>
       <a href="/thoughts">
         <p>Thoughts</p>
@@ -73,6 +76,7 @@ onMount(() => {
   // Preload data for common routes
   preloadData('/thoughts');
   preloadData('/projects');
+  preloadData('/photography');
 });
 </script>
 
@@ -108,6 +112,7 @@ onMount(() => {
     justify-content: center;
     transition: background-color 0.4s ease-in-out;
     background-color: var(--bg-color);
+    z-index: 1;
   }
 
   .navWrapper {
