@@ -28,7 +28,7 @@
 
 <svelte:head>
     <title>Shakhzod Sharifov</title>
-    <meta name="description" content="Software engineer and designer from the Heart of Silk Road">
+    <meta name="description" content="Software engineer and designer from planet Earth">
     <meta name="keywords" content="software engineer, designer, Uzbekistan, technology, art, projects, books, thoughts">
     
     <!-- Open Graph / Facebook -->
