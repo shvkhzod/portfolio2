@@ -1,6 +1,6 @@
 ---
 title: "Bike in Motion"
-imagePath: "/photos/bike.png"
+imagePath: "/photos/rider.webp"
 caption: "Trying to capture fast motobike"
-date: "2025-01-15"
+date: "2025-02-02"
 ---

@@ -5,15 +5,19 @@ export const load: PageLoad = async () => {
   const photos = [];
 
   for (const path in posts) {
-    const post = await posts[path]() as { metadata: { [key: string]: any } };
+    const post = await posts[path]() as { metadata: { [key: string]: unknown } };
     photos.push({
       ...post.metadata,
       slug: path.split('/').pop()?.replace('.md', ''),
-      date: post.metadata.date // Ensure date is included
+      date: post.metadata.date as string | number | Date // Ensure date is included
     });
+    photos.forEach(photo => {
+      console.log(new Date(photo.date))
+    })
+    console.log(photos)
   }
 
   return {
-    photos: photos.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+    photos: photos.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
   };
 };
