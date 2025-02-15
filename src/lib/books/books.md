@@ -2,10 +2,20 @@
 
 ## 2025
 
+### Source Code by Bill Gates
+Category: Biography
+Subtitle: Memoir book of Bill Gates, focused primarily his journey till Microsoft
+Rating: 6.5/10
+
+### Amusing Ourselves To Death
+Category: Non-fiction
+Subtitle: Arguments that makes you reconsider your whole view about digitized information
+Rating: 8/10
+
 ### Muqadimmah
 Category: Non-fiction
 Subtitle: An overview of history, religion, economics, politics and science of 14th century
-Rating: 6.5
+Rating: 6.5/10
 
 ### The Art of Doing Science and Engineering
 Category: Non-fiction
