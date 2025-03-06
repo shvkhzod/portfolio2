@@ -18,6 +18,7 @@ export interface Project {
     date: string;
     url: string;
     content: string;
+	thumbnail: string;
 }
 
 export interface Book {

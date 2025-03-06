@@ -40,7 +40,7 @@
 .dark .itemTitle {
   font-size: 14px;
   font-weight: 500;
-  color: white;
+  color: rgb(255, 255, 255);
   width: max-content; /* Let the title take its natural width */
   transition: 0.4s ease-in-out;
 }
@@ -54,6 +54,7 @@
  .dark .itemDate {
     font-size: 14px;
     color: white;
+    font-weight: 500;
     margin-left: auto;
     transition: 0.4s ease-in-out;
   } 
@@ -63,7 +64,7 @@
   .light .itemDate {
   color: black;
   margin-left: auto;
-  font-weight: 550; /* Push the date to the right */
+  font-weight: 500; /* Push the date to the right */
   transition: 0.4s ease-in-out;
 }
 .light.itemWrap {
@@ -83,8 +84,8 @@
 
 .light .itemTitle {
   font-size: 14px;
-  font-weight: 550;
-  color: black;
+  font-weight: 500;
+  color:black;
   width: max-content; /* Let the title take its natural width */
   transition: 0.4s ease-in-out;
 }
@@ -98,7 +99,8 @@
   }
  .light .itemDate {
     font-size: 14px;
-    color: black;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
     margin-left: auto;
     transition: 0.4s ease-in-out;
   } 

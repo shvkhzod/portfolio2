@@ -136,4 +136,23 @@
         background-color: black;
         border: none;
     }
+
+    @media (max-width: 768px) {
+   
+        .light .blogsContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        transition: 0.4s ease-in-out;
+    }
+
+    .dark .blogsContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px; 
+        transition: 0.4s ease-in-out;
+    }
+    }
 </style>

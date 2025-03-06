@@ -86,9 +86,9 @@
   .photo-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 8px;
-    padding: 100px 400px;
+    padding: 100px 500px;
   }
 
   .photo-card {

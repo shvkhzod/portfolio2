@@ -69,14 +69,16 @@
 
     .dark .title {
         color: white;
-        font-size: 24px;
+        font-size: 18px;
+        font-weight: 500;
         transition: 0.4s ease-in-out;
     }
 
     .dark .date {
         color: white;
         opacity: 0.55;
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: 500;
         transition: 0.4s ease-in-out;
         margin-bottom: 20px;
         margin-top: 4px;
@@ -90,14 +92,16 @@
 
     .dark :global(.blogContent h2) {
         color: white;
-        font-weight: 550;
-        font-size: 24px;
+        font-weight: 500;
+        font-size: 20px;
         transition: 0.4s ease-in-out;
     }
 
     .dark :global(.blogContent p) {
         color: #d8d8d8;
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
         transition: 0.4s ease-in-out;
     }
 
@@ -122,7 +126,7 @@
     .light .blogWrapper {
         margin-top: 100px;
         display: flex;
-        width: 640px;
+        width: 650px;
         padding: 20px 64px; 
         flex-direction: column;
         transition: 0.4s ease-in-out;
@@ -131,11 +135,13 @@
     .light .title {
         color: black;
         font-size: 18px;
+        font-weight: 500;
         transition: 0.4s ease-in-out;
     }
 
     .light .date {
         color: black;
+        font-weight: 500;
         opacity: 0.55;
         font-size: 14px;
         transition: 0.4s ease-in-out;
@@ -145,8 +151,8 @@
 
     .light :global(.blogContent h2) {
         color: black;
-        font-weight: 550;
-        font-size: 24px;
+        font-weight: 500;
+        font-size: 20px;
         transition: 0.4s ease-in-out;
     }
 
@@ -157,8 +163,10 @@
     }
 
     .light :global(.blogContent p) {
-        color: #555555;
+        color: #808080;
         font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
         transition: 0.4s ease-in-out;
     }
 
@@ -167,5 +175,30 @@
         margin-top: 20px;
         transition: 0.4s ease-in-out;
         border-radius: 16px;
+    }
+
+    @media (max-width: 768px) {
+        .light .blogWrapper {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+   
+
+        .dark .blogWrapper {
+            margin-top: 20px;
+            width: 100%;
+            padding: 20px;
+        }
+        .light :global(.blogContent p) {
+            line-height: 24px;
+    }
+
+    .dark :global(.blogContent p) {
+        line-height: 24px;
+    }
+
+     
     }
 </style>

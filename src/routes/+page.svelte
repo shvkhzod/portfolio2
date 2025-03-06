@@ -189,16 +189,16 @@
 		.dark .fullName {
 			font-size: 14px;
 			font-weight: 600;
-			color: white;
+			color: #ededed;
 			transition: 0.4s ease-in-out;
 		
 		}
 
 		.dark .job {
+			margin-top: 2px;
 			font-size: 14px;
-			color: white;
-			font-weight: 500;
-			opacity: 50%;
+			color: rgb(168, 168, 168);
+			font-weight: 400;
 			transition: 0.4s ease-in-out;
 		}
 
@@ -215,23 +215,24 @@
 		.dark .subtitle {
 			margin-top: 40px;
 			text-align: left;
-			color: white;
-			opacity: 50%;
+			color: #ededed;
+			font-weight: 400;
+			line-height: 21px;
 			font-size: 14px;
 			transition: 0.4s ease-in-out;
 		}
 		.dark .subtitle2 {
 			margin-top: 20px;
 			text-align: left;
-			color: white;
-			opacity: 50%;
+			color: #ededed;
+			line-height: 21px;
 			font-size: 14px;
+			font-weight: 400;
 			transition: 0.4s ease-in-out;
 		}
 
 		.dark .links a {
-			color: white;
-			opacity: 50%;
+			color: #ededed;
 			text-decoration: underline;
 			text-underline-offset: 4px;
 			font-size: 14px;
@@ -329,10 +330,10 @@
 		}
 
 		.light .job {
+			margin-top: 2px;
 			font-size: 14px;
-			font-weight: 500;
-			opacity: 50%;
-			color: black;
+			font-weight: 400;
+			color: #626161;
 			transition: 0.4s ease-in-out;
 		}
 
@@ -350,16 +351,17 @@
 		.light .subtitle {
 			margin-top: 40px;
 			text-align: left;
-			color: black;
-			opacity: 50%;
+			color: #626161;
+			font-weight: 400;
+			line-height: 21px;
 			font-size: 14px;
 			transition: 0.4s ease-in-out;
 		}
 
 		.light .links a {
-			color: black;
-			opacity: 50%;
+			color: #626161;
 			text-decoration: underline;
+			text-underline-offset: 4px;
 			font-size: 14px;
 			transition: 0.1s ease-in-out;
 		}
@@ -375,9 +377,10 @@
 
 		.light .subtitle2 {
 			margin-top: 20px;
+			line-height: 21px;
 			text-align: left;
-			color: black;
-			opacity: 50%;
+			font-weight: 400;
+			color: #626161;
 			font-size: 14px;
 			transition: 0.4s ease-in-out;
 		}
@@ -562,9 +565,10 @@
 		}
 
 		.dark .job {
+			margin-top: 4px;
 			font-size: 14px;
 			color: white;
-			font-weight: 500;
+			font-weight: 400;
 			opacity: 50%;
 			transition: 0.4s ease-in-out;
 		}
@@ -635,8 +639,8 @@
 			margin-top: 60px;
 			display: flex;
 			flex-direction: column;
-			width: 640px;
-			padding: 20px;
+			width: 100%;
+			padding: 24px;
 			justify-content: center;
 			background-color: white;
 			transition: 0.4s ease-in-out;
@@ -670,8 +674,9 @@
 		}
 
 		.light .job {
+			margin-top: 4px;
 			font-size: 14px;
-			font-weight: 500;
+			font-weight: 400;
 			opacity: 50%;
 			color: black;
 			transition: 0.4s ease-in-out;
@@ -680,6 +685,7 @@
 		.light .subtitle {
 			margin-top: 32px;
 			text-align: left;
+			font-weight: 400;
 			line-height: 24px;
 			color: black;
 			opacity: 50%;
@@ -689,6 +695,7 @@
 			line-height: 24px;
 			margin-top: 20px;
 			text-align: left;
+			font-weight: 400;
 			color: black;
 			opacity: 50%;
 			transition: 0.4s ease-in-out;
@@ -759,6 +766,14 @@
 			flex-direction: column;
 			gap: 24px;
 			transition: 0.4s ease-in-out;
+		}
+
+		.light .prolist a {
+			color: #000000;
+		}
+
+		.dark .prolist a {
+			color: #ffffff;
 		}
 	}
 </style>

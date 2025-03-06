@@ -9,6 +9,8 @@ export const load: PageLoad = async () => {
     photos.push({
       ...post.metadata,
       slug: path.split('/').pop()?.replace('.md', ''),
+      imagePath: post.metadata.imagePath as string,
+      caption: post.metadata.caption as string,
       date: post.metadata.date as string | number | Date // Ensure date is included
     });
   }

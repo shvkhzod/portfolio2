@@ -66,7 +66,7 @@
 
     .dark .title {
         color: white;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
         transition: 0.4s ease-in-out;
     }
@@ -96,9 +96,10 @@
  
 
     .dark :global(p) {
-        color: rgb(86, 86, 86)59;
+        color: rgb(184, 184, 184);
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 400;
+        line-height: 22px;
         transition: 0.4s ease-in-out;
     }
     .dark :global(.projectContent > p > img ){
@@ -162,9 +163,10 @@
  
 
     .light :global(p){
-        font-weight: 500;
+        font-weight: 400;
         color: #595959;
         font-size: 14px;
+        line-height: 22px;
         transition: 0.4s ease-in-out;
     }
     .light :global(.projectContent > p > img ){
@@ -178,6 +180,32 @@
     .light :global( h2) {
         font-size: 18px;
         color: #000000;
-        font-weight: 550;
+        font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+        .light .projectWrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+            transition: 0.4s ease-in-out;
+        }
+
+        .dark .projectWrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+            transition: 0.4s ease-in-out;
+        }
+
+        .light :global(p) {
+            line-height: 24px;
+        }
+
+        .dark :global(p) {
+            line-height: 24px;
+        }
     }
 </style>
