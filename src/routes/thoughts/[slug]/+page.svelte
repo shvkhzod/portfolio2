@@ -61,8 +61,8 @@
     .dark .blogWrapper {
         margin-top: 100px;
         display: flex;
-        width: 640px;
-        padding: 20px 28px;
+        width: 650px;
+        padding: 20px 64px;
         flex-direction: column;
         transition: 0.4s ease-in-out;
     }
@@ -123,21 +123,21 @@
         margin-top: 100px;
         display: flex;
         width: 640px;
-        padding: 20px 28px;
+        padding: 20px 64px; 
         flex-direction: column;
         transition: 0.4s ease-in-out;
     }
 
     .light .title {
         color: black;
-        font-size: 24px;
+        font-size: 18px;
         transition: 0.4s ease-in-out;
     }
 
     .light .date {
         color: black;
         opacity: 0.55;
-        font-size: 16px;
+        font-size: 14px;
         transition: 0.4s ease-in-out;
         margin-top: 4px;
         margin-bottom: 20px;
@@ -158,7 +158,7 @@
 
     .light :global(.blogContent p) {
         color: #555555;
-        font-size: 16px;
+        font-size: 14px;
         transition: 0.4s ease-in-out;
     }
 

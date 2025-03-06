@@ -3,6 +3,7 @@
         <h1 class={`title ${$currentTheme}`}>{data.title}</h1>
         
         <div class={`filters ${$currentTheme}`}>
+           <div class="selections">
             <select bind:value={selectedCategory} class={$currentTheme}>
                 <option value="">All Categories</option>
                 {#each categories as category}
@@ -15,6 +16,9 @@
                     <option value={rating}>{rating}+ Stars</option>
                 {/each}
             </select>
+           </div>
+
+            <p class="numberOfBooks">Number of books: {data.numberOfBooks}</p>
         </div>
 
         {#each filteredYearGroups as yearGroup}
@@ -81,11 +85,22 @@
     .dark.bookWrapper {
       display: flex;
       flex-direction: column;
-      width: 640px;
-      padding: 20px;
+      width: 650px;
+      padding: 24px 64px 120px 64px;
       transition: 0.4s ease-in-out;
     }
-  
+
+    .dark.filters {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .dark.filters .selections {
+        display: flex;
+        gap: 20px;
+    }
    
   
     .dark .title {
@@ -96,7 +111,7 @@
 
     .dark h2 {
         color: white;
-        font-size: 18px;
+        font-size: 16px;
         transition: 0.4s ease-in-out;
     }
     .dark a {
@@ -112,14 +127,14 @@
 
     .dark .book h3 {
         color: white;
-        font-weight: 550;
-        font-size: 18px;
+        font-weight: 600;
+        font-size: 16px;
         transition: 0.4s ease-in-out;
     }
 
     .dark .book p {
         color: white;
-        font-size: 16px;
+        font-size: 14px;
         opacity: 0.7;
         transition: 0.4s ease-in-out;
     }
@@ -145,7 +160,7 @@
     .dark .line {
         width: 86%;
         height: 1px;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.553);
     }
 
 
@@ -166,8 +181,8 @@
     .light.bookWrapper {
       display: flex;
       flex-direction: column;
-      width: 640px;
-      padding: 24px;
+      width: 650px;
+      padding: 24px 64px 120px 64px;
       transition: 0.4s ease-in-out;
     }
   
@@ -197,14 +212,14 @@
 
     .light .book h3 {
         color: black;
-        font-weight: 550;
-        font-size: 18px;
+        font-weight: 600;
+        font-size: 16px;
         transition: 0.4s ease-in-out;
     }
 
     .light .book p {
         color: black;
-        font-size: 16px;
+        font-size: 14px;
         opacity: 0.7;
         transition: 0.4s ease-in-out;
     }
@@ -217,7 +232,7 @@
 
     .light h2 {
         color: black;
-        font-size: 18px;
+        font-size: 16px;
         transition: 0.4s ease-in-out;
     }
     .light a {
@@ -225,11 +240,28 @@
       transition: 0.4s ease-in-out;
     }
 
+    .light .numberOfBooks {
+        color: black;
+        opacity: 0.7;
+        transition: 0.4s ease-in-out;
+    }
+
+    .dark .numberOfBooks {
+        color: white;
+        opacity: 0.7;
+        transition: 0.4s ease-in-out;
+    }
+
     .filters {
         display: flex;
-        gap: 20px;
+        justify-content: space-between;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .filters .selections {
+        display: flex;
+        gap: 20px;
     }
 
     select {

@@ -62,10 +62,11 @@ export const load: PageServerLoad = async () => {
         }
 
         const { title, yearGroups } = parseMarkdown(content);
-
+        const numberOfBooks = yearGroups.reduce((acc, yearGroup) => acc + yearGroup.books.length, 0);
         return {
             title,
-            yearGroups
+            yearGroups,
+            numberOfBooks
         };
     } catch (e) {
         console.error("Error loading books:", e);

@@ -36,7 +36,7 @@
         color: white;
         font-size: 18px;
         font-weight: 550;
-        font-size: 18px;
+        font-size: 14px;
         transition: 0.4s ease-in-out;
     }
 
@@ -61,16 +61,15 @@
 
     .light .title {
         color: black;
-        font-size: 18px;
-        font-weight: 550;
-        font-size: 18px;
+        font-size: 14px;
+        font-weight: 600;
         transition: 0.4s ease-in-out;
     }
 
     .light .subtitle {
         color: black;
         opacity: 50%;
-        font-size: 16px;
+        font-size: 14px;
         transition: 0.4s ease-in-out;
     }
 

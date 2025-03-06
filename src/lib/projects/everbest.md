@@ -1,8 +1,9 @@
 ---
 title: "Everbest"
-subtitle: "A digitilaztion of educational brand to make it more accessible and visible to the public"
+subtitle: "Digitization of educactional brand"
 url: "everbest"
 date: "July 2022"
+thumbnail: "./images/everPreview.webp"
 ---
 
 ![Everbest Preview](/images/everPreview.webp)

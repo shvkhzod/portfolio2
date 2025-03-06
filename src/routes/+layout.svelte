@@ -31,11 +31,9 @@
 </div>
 
 <div class="appContainer">
-  <PageTransition url={$page.url.pathname}>
-    <main>
-      <slot />
-    </main>
-  </PageTransition>
+  <main>
+    <slot />
+  </main>
 </div>
 
 <script lang="ts">
@@ -48,8 +46,10 @@ import { writable, type Writable } from "svelte/store";
 import { inject } from '@vercel/analytics'
 import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 import { preloadData } from '$app/navigation';
-import PageTransition from "$lib/PageTransition.svelte";
 import { page } from "$app/stores";
+import '@fontsource-variable/geist';
+import '@fontsource-variable/geist-mono';
+import '@fontsource/geist-sans/100.css';;
 
 
 inject({ mode: 'production' });
@@ -117,8 +117,8 @@ onMount(() => {
 
   .navWrapper {
     width: 100%;
-    max-width: 652px;
-    padding: 0px 20px;
+    max-width: 650px;
+    padding: 0px 64px 0px 56px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -133,6 +133,15 @@ onMount(() => {
     color: var(--text-color);
   }
 
+  .prolist .light {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+    transition: color 0.4s ease-in-out;
+  }
+
   .list {
     display: flex;
     flex-direction: row;
@@ -145,6 +154,7 @@ onMount(() => {
     font-weight: 500;
     transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
     padding: 8px;
+    font-size: 14px;
     border-radius: 8px;
     color: var(--text-color);
   }
@@ -174,5 +184,10 @@ onMount(() => {
     .list {
       gap: 8px;
     }
+
+    
+  .navWrapper {
+    padding: 0px 24px;
+  }
   }
 </style>

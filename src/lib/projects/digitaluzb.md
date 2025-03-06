@@ -1,8 +1,9 @@
 ---
 title: "Digitaluzb"
-subtitle: "I formed a community of programmers and designers on Instagram. Right now we are more than 2000 and growing"
+subtitle: "Community of programmers and designers"
 url: "digitaluzb"
 date: "02 May 2023"
+thumbnail: "./images/digitalThumb.webp"
 ---
 
 ![Digitaluzb Thumbnail](/images/digitalThumb.webp)

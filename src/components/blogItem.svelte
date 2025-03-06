@@ -32,12 +32,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 4px 0px;
   gap: 20px;
   transition: 0.4s ease-in-out;
 }
 
 .dark .itemTitle {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: white;
   width: max-content; /* Let the title take its natural width */
@@ -47,7 +48,7 @@
 .dark .line {
   flex-grow: 1;
   height: 1px;
-  background-color: white;
+  background-color:rgba(255, 255, 255, 0.386);
   transition: 0.4s ease-in-out;
   }
  .dark .itemDate {
@@ -62,7 +63,7 @@
   .light .itemDate {
   color: black;
   margin-left: auto;
-  font-weight: 500; /* Push the date to the right */
+  font-weight: 550; /* Push the date to the right */
   transition: 0.4s ease-in-out;
 }
 .light.itemWrap {
@@ -70,13 +71,19 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 4px 0px;
   gap: 20px;
   transition: 0.4s ease-in-out;
 }
 
+.light.itemWrap:hover {
+  background-color: #06060617;
+  transition: 0.4s ease-in-out;
+}
+
 .light .itemTitle {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 550;
   color: black;
   width: max-content; /* Let the title take its natural width */
   transition: 0.4s ease-in-out;
@@ -85,6 +92,7 @@
 .light .line {
   flex-grow: 1;
   height: 1px;
+  opacity: 12%;
   background-color: black;
   transition: 0.4s ease-in-out;
   }

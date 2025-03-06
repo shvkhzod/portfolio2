@@ -11,10 +11,6 @@ export const load: PageLoad = async () => {
       slug: path.split('/').pop()?.replace('.md', ''),
       date: post.metadata.date as string | number | Date // Ensure date is included
     });
-    photos.forEach(photo => {
-      console.log(new Date(photo.date))
-    })
-    console.log(photos)
   }
 
   return {

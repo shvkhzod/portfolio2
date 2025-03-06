@@ -1,16 +1,11 @@
 <script lang="ts">
-	import Ava from '$lib/images/newprofile.webp';
-	import GitHub from '$lib/images/github.svg';
-	import GitHubLight from '$lib/images/github-light.svg';
-	import Instagram from '$lib/images/instagram.svg';
-	import InstagramLight from '$lib/images/instagram-light.svg';
-	import Mail from '$lib/images/mail.svg';
-	import MailLight from '$lib/images/mail-light.svg';
+	import Ava from '$lib/images/ava.svg';
 	import TinyView from '../components/tinyView.svelte';
 	import { theme } from '../utils/theme';
 	import { writable, type Writable } from 'svelte/store';
 	import { onMount } from 'svelte';
 	import type { PageData } from './$types';
+	import WithImage from '../components/withImage.svelte';
 
 	export let data: PageData;
 
@@ -19,7 +14,7 @@
 	$: projects = data.projects;
 	$: blogs = data.posts;
 	$: books = data.books;
-	console.log(projects, blogs)
+
 
 	theme.subscribe((value) => {
 		currentTheme.set(value);
@@ -27,45 +22,70 @@
 </script>
 
 <svelte:head>
-    <title>Shakhzod Sharifov</title>
-    <meta name="description" content="Software engineer and designer from planet Earth">
-    <meta name="keywords" content="software engineer, designer, Uzbekistan, technology, art, projects, books, thoughts">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourwebsite.com/">
-    <meta property="og:title" content="Shakhzod - Software Engineer and Designer">
-    <meta property="og:description" content="Software engineer and designer from the Heart of Silk Road">
-    <meta property="og:image" content="/static/images/preview.png">
+	<title>Shakhzod Sharifov</title>
+	<meta name="description" content="Software engineer and designer from planet Earth" />
+	<meta
+		name="keywords"
+		content="software engineer, designer, Uzbekistan, technology, art, projects, books, thoughts"
+	/>
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="/images/preview.png">
-    <meta property="twitter:title" content="Shakhzod - Software Engineer and Designer">
-    <meta property="twitter:description" content="Software engineer and designer from the Heart of Silk Road.">
-    <meta property="twitter:image" content="/static/images/preview.png">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://yourwebsite.com/" />
+	<meta property="og:title" content="Shakhzod - Software Engineer and Designer" />
+	<meta
+		property="og:description"
+		content="Software engineer and designer from the Heart of Silk Road"
+	/>
+	<meta property="og:image" content="/static/images/preview.png" />
 
-    <!-- Additional SEO tags -->
-    <link rel="canonical" href="https://shakhzod.co/">
-    <meta name="author" content="Shakhzod">
-    <meta name="robots" content="index, follow">
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="/images/preview.png" />
+	<meta property="twitter:title" content="Shakhzod - Software Engineer and Designer" />
+	<meta
+		property="twitter:description"
+		content="Software engineer and designer from the Heart of Silk Road."
+	/>
+	<meta property="twitter:image" content="/static/images/preview.png" />
+
+	<!-- Additional SEO tags -->
+	<link rel="canonical" href="https://shakhzod.co/" />
+	<meta name="author" content="Shakhzod" />
+	<meta name="robots" content="index, follow" />
 </svelte:head>
 
 <div class={`mainContainer ${$currentTheme}`}>
 	<div class={`mainWrapper ${$currentTheme}`}>
-		<img src={Ava} alt="avatar" class="ava" loading="lazy" />
-		<h1>Hello, I'm Shakhzod, a software engineer and designer from the planet Earth.</h1>
-		<p class="subtitle">Exploring and observing what technology with art can bring together</p>
+		<div class="profile">
+			<img src={Ava} alt="avatar" class="ava" loading="lazy" />
+			<div>
+				<p class="fullName">Shakhzod Sharifov</p>
+			<p class="job">Software Engineer/Designer</p>
+			</div>
+		</div>
+		<p class="subtitle">
+			Hello, I like to build cool stuff, take pictures, 
+			and read books when I'm not coding. I would love to call myself an artist, but I am not. Mere mortal exploring the world of technology and art.
+		</p>
+		<p class="subtitle2">If you have any questions or just want to say hi, feel free to email me. See you around</p>
 
 		<div class={`links ${$currentTheme}`}>
 			<a href="https://github.com/shvkhzod">
-				<img src={$currentTheme == 'dark' ? GitHub : GitHubLight} alt="github" loading="lazy" />
+				<!-- <img src={$currentTheme == 'dark' ? GitHub : GitHubLight} alt="github" loading="lazy" /> -->
+				Github
 			</a>
 			<a href="mailto:thedigitaluzb@gmail.com?subject=Work">
-				<img src={$currentTheme == 'dark' ? Mail : MailLight} alt="gmail"loading="lazy" />
+				<!-- <img src={$currentTheme == 'dark' ? Mail : MailLight} alt="gmail" loading="lazy" /> -->
+				 Email
 			</a>
 			<a href="https://www.instagram.com/shvkhzood/">
-				<img src={$currentTheme == 'dark' ? Instagram : InstagramLight} alt="Instagram" loading="lazy" />
+				<!-- <img
+					src={$currentTheme == 'dark' ? Instagram : InstagramLight}
+					alt="Instagram"
+					loading="lazy"
+				/> -->
+				Instagram
 			</a>
 		</div>
 
@@ -73,12 +93,21 @@
 			<h2 class={`headerSec ${$currentTheme}`}>Projects</h2>
 			<a href="projects" class={`seeAll ${$currentTheme}`}>See All</a>
 		</div>
-
-		<div class={`list ${$currentTheme}`}>
+	
+		<div class={`${$currentTheme} prolist`}>
 			{#if projects}
+			
 				{#each projects.slice(0, 3) as project}
-					<a href={`projects/${project.url}`}>
+					<!-- <a href={`projects/${project.url}`}>
 						<TinyView title={project.title} subtitle={project.subtitle} />
+					</a> -->
+
+					<a href={`projects/${project.url}`}>
+						<WithImage
+							title={project.title}
+							imageUrl={project.thumbnail}
+							subtitle={project.subtitle}
+							/>
 					</a>
 				{/each}
 			{/if}
@@ -88,7 +117,7 @@
 			<h2 class={`headerSec ${$currentTheme}`}>Books</h2>
 			<a href="books" class={`seeAll ${$currentTheme}`}>See All</a>
 		</div>
-		
+
 		<div class={`list ${$currentTheme}`}>
 			<div class={`list ${currentTheme}`}>
 				{#each books as book}
@@ -115,6 +144,7 @@
 		</div>
 	</div>
 </div>
+
 <style>
 	/*Desktop and laptop */
 	@media (min-width: 768px) {
@@ -122,7 +152,7 @@
 			width: 100%;
 			display: flex;
 			flex-direction: row;
-			justify-content: center; 
+			justify-content: center;
 			align-items: center;
 		}
 
@@ -140,12 +170,36 @@
 			margin-top: 60px;
 			display: flex;
 			flex-direction: column;
-			width: 640px;
-			padding: 20px;
+			width: 650px;
+			padding: 0px 64px;
 			justify-content: center;
 			background-color: black;
 			transition: 0.4s ease-in-out;
 			padding-bottom: 60px;
+		}
+
+		.dark .profile {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap:20px;
+			transition: 0.4s ease-in-out;
+		}
+
+		.dark .fullName {
+			font-size: 14px;
+			font-weight: 600;
+			color: white;
+			transition: 0.4s ease-in-out;
+		
+		}
+
+		.dark .job {
+			font-size: 14px;
+			color: white;
+			font-weight: 500;
+			opacity: 50%;
+			transition: 0.4s ease-in-out;
 		}
 
 		.dark h1 {
@@ -159,14 +213,41 @@
 		}
 
 		.dark .subtitle {
-			margin-top: 8px;
+			margin-top: 40px;
 			text-align: left;
 			color: white;
 			opacity: 50%;
+			font-size: 14px;
 			transition: 0.4s ease-in-out;
 		}
+		.dark .subtitle2 {
+			margin-top: 20px;
+			text-align: left;
+			color: white;
+			opacity: 50%;
+			font-size: 14px;
+			transition: 0.4s ease-in-out;
+		}
+
+		.dark .links a {
+			color: white;
+			opacity: 50%;
+			text-decoration: underline;
+			text-underline-offset: 4px;
+			font-size: 14px;
+			transition: 0.1s ease-in-out;
+		}
+
+		.dark .links a:hover {
+			color: white;
+			opacity: 100%;
+			text-decoration: underline;
+			font-size: 14px;
+			transition: ease-in-out;
+		}
 		.dark .ava {
-			width: 132px;
+			width: 32px;
+			height: 32px;
 			transition: 0.4s ease-in-out;
 		}
 
@@ -194,9 +275,9 @@
 		.dark .headerSec {
 			color: black;
 			background-color: white;
-			font-weight: 550;
+			font-weight: 600;
 			font-size: 14px;
-			padding: 4px 8px;
+			padding: 4px 12px;
 			border-radius: 6px;
 			transition: 0.4s ease-in-out;
 		}
@@ -223,13 +304,38 @@
 			margin-top: 60px;
 			display: flex;
 			flex-direction: column;
-			width: 640px;
-			padding: 20px;
+			width: 650px;
+			padding: 0px 64px;
 			justify-content: center;
 			background-color: white;
 			transition: 0.4s ease-in-out;
 			padding-bottom: 60px;
 		}
+
+		.light .profile {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap:20px;
+			
+		}
+
+		.light .fullName {
+			font-size: 14px;
+			font-weight: 600;
+			color: black;
+			transition: 0.4s ease-in-out;
+		
+		}
+
+		.light .job {
+			font-size: 14px;
+			font-weight: 500;
+			opacity: 50%;
+			color: black;
+			transition: 0.4s ease-in-out;
+		}
+
 
 		.light h1 {
 			margin-top: 12px;
@@ -242,14 +348,42 @@
 		}
 
 		.light .subtitle {
-			margin-top: 8px;
+			margin-top: 40px;
 			text-align: left;
 			color: black;
 			opacity: 50%;
+			font-size: 14px;
+			transition: 0.4s ease-in-out;
+		}
+
+		.light .links a {
+			color: black;
+			opacity: 50%;
+			text-decoration: underline;
+			font-size: 14px;
+			transition: 0.1s ease-in-out;
+		}
+
+		.light .links a:hover {
+			color: black;
+			opacity: 100%;
+			text-decoration: underline;
+			text-underline-offset: 4px;
+			font-size: 14px;
+			transition: ease-in-out;
+		}
+
+		.light .subtitle2 {
+			margin-top: 20px;
+			text-align: left;
+			color: black;
+			opacity: 50%;
+			font-size: 14px;
 			transition: 0.4s ease-in-out;
 		}
 		.light .ava {
-			width: 132px;
+			width: 32px;
+			height: 32px;
 			transition: 0.4s ease-in-out;
 		}
 
@@ -277,9 +411,9 @@
 		.light .headerSec {
 			color: white;
 			background-color: black;
-			font-weight: 550;
+			font-weight: 600;
 			font-size: 14px;
-			padding: 4px 8px;
+			padding: 4px 12px;
 			border-radius: 6px;
 			transition: 0.4s ease-in-out;
 		}
@@ -297,6 +431,34 @@
 			gap: 24px;
 			transition: 0.4s ease-in-out;
 		}
+
+		.light .prolist {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+
+		.dark .prolist {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 20px;
+			flex-wrap: wrap;
+			
+		}
+
+		.dark .prolist a {
+			color:white;
+			
+		}
+		.light .prolist a {
+			color:black;
+			
+		}
+
+		
 	}
 
 	/*Mobile */
@@ -311,7 +473,6 @@
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
-
 		}
 
 		.dark.mainContainer {
@@ -329,7 +490,7 @@
 			display: flex;
 			flex-direction: column;
 			width: 100%;
-			padding: 20px;
+			padding: 24px;
 			justify-content: center;
 			background-color: black;
 			transition: 0.4s ease-in-out;
@@ -347,14 +508,68 @@
 		}
 
 		.dark .subtitle {
-			margin-top: 8px;
+			margin-top: 32px;
 			text-align: left;
 			color: white;
+			font-weight: 400;
+			line-height: 24px;
+			opacity: 100%;
+			transition: 0.4s ease-in-out;
+		}
+
+		
+		.dark .links a {
+			color: white;
+			opacity: 50%;
+			text-decoration: underline;
+			text-underline-offset: 4px;
+			font-size: 14px;
+			transition: 0.1s ease-in-out;
+		}
+
+		.dark .links a:hover {
+			color: white;
+			opacity: 100%;
+			text-decoration: underline;
+			font-size: 14px;
+			transition: ease-in-out;
+		}
+
+		.dark .subtitle2 {
+			margin-top: 20px;
+			text-align: left;
+			color: white;
+			font-weight: 400;
+			line-height: 24px;
+			opacity: 100%;
+			transition: 0.4s ease-in-out;
+		}
+
+		.dark .profile {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap:20px;
+			transition: 0.4s ease-in-out;
+		}
+
+		.dark .fullName {
+			font-size: 14px;
+			font-weight: 600;
+			color: white;
+			transition: 0.4s ease-in-out;
+		
+		}
+
+		.dark .job {
+			font-size: 14px;
+			color: white;
+			font-weight: 500;
 			opacity: 50%;
 			transition: 0.4s ease-in-out;
 		}
 		.dark .ava {
-			width: 110px;
+			width: 32px;
 			transition: 0.4s ease-in-out;
 		}
 
@@ -403,6 +618,19 @@
 			gap: 24px;
 		}
 
+
+		.dark .prolist {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			flex-wrap: wrap;
+			
+		}
+
+		.dark .prolist a {
+			color:white;
+			
+		}
 		.light .mainWrapper {
 			margin-top: 60px;
 			display: flex;
@@ -425,15 +653,66 @@
 			transition: 0.4s ease-in-out;
 		}
 
+		.light .profile {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap:20px;
+			
+		}
+
+		.light .fullName {
+			font-size: 14px;
+			font-weight: 600;
+			color: black;
+			transition: 0.4s ease-in-out;
+		
+		}
+
+		.light .job {
+			font-size: 14px;
+			font-weight: 500;
+			opacity: 50%;
+			color: black;
+			transition: 0.4s ease-in-out;
+		}
+
 		.light .subtitle {
-			margin-top: 8px;
+			margin-top: 32px;
+			text-align: left;
+			line-height: 24px;
+			color: black;
+			opacity: 50%;
+			transition: 0.4s ease-in-out;
+		}
+		.light .subtitle2 {
+			line-height: 24px;
+			margin-top: 20px;
 			text-align: left;
 			color: black;
 			opacity: 50%;
 			transition: 0.4s ease-in-out;
 		}
+
+		.light .links a {
+			color: black;
+			opacity: 50%;
+			text-decoration: underline;
+			text-underline-offset: 4px;
+			font-size: 14px;
+			transition: 0.1s ease-in-out;
+		}
+
+		.light .links a:hover {
+			color: black;
+			opacity: 100%;
+			text-decoration: underline;
+			text-underline-offset: 4px;
+			font-size: 14px;
+			transition: ease-in-out;
+		}
 		.light .ava {
-			width: 110px;
+			width: 32px;
 			transition: 0.4s ease-in-out;
 		}
 

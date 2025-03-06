@@ -59,7 +59,7 @@
         margin-top: 40px;
         display: flex;
         width: 640px;
-        padding: 20px 28px;
+        padding: 20px 64px 120px 64px;
         flex-direction: column;
         transition: 0.4s ease-in-out;
     }
@@ -73,14 +73,14 @@
 
     .dark:global( h2) {
         color: white;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
         transition: 0.4s ease-in-out;
     }
 
     .dark .date {
         color: white;
-        font-size: 16px;
+        font-size: 14px;
         opacity: 0.65;
         transition: 0.4s ease-in-out;
     }
@@ -95,9 +95,10 @@
 
  
 
-    .dark :global(.projectContent p) {
-        color: white;
-        font-size: 16px;
+    .dark :global(p) {
+        color: rgb(86, 86, 86)59;
+        font-size: 14px;
+        font-weight: 500;
         transition: 0.4s ease-in-out;
     }
     .dark :global(.projectContent > p > img ){
@@ -123,15 +124,15 @@
     .light .projectWrapper {
         margin-top: 40px;
         display: flex;
-        width: 640px;
-        padding: 20px 28px;
+        width: 650px;
+        padding: 20px 64px 120px 64px;
         flex-direction: column;
         transition: 0.4s ease-in-out;
     }
 
     .light .title {
         color: black;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
         transition: 0.4s ease-in-out;
     }
@@ -145,7 +146,7 @@
 
     .light .date {
         color: black;
-        font-size: 16px;
+        font-size: 14px;
         opacity: 0.65;
         transition: 0.4s ease-in-out;
     }
@@ -160,10 +161,10 @@
 
  
 
-    .light :global(.block p){
-        margin-top: 8px;
-        color: #525252;
-        font-size: 16px;
+    .light :global(p){
+        font-weight: 500;
+        color: #595959;
+        font-size: 14px;
         transition: 0.4s ease-in-out;
     }
     .light :global(.projectContent > p > img ){
@@ -175,7 +176,8 @@
     }
 
     .light :global( h2) {
-        font-size: 24px;
+        font-size: 18px;
+        color: #000000;
         font-weight: 550;
     }
 </style>

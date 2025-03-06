@@ -61,8 +61,8 @@
     .dark .blogsContainer {
         display: flex;
         flex-direction: column;
-        width: 640px;
-        padding: 20px;
+        width: 650px;
+        padding: 20px 64px 120px 64px; 
         transition: 0.4s ease-in-out;
     }
 
@@ -93,8 +93,8 @@
     .light .blogsContainer {
         display: flex;
         flex-direction: column;
-        width: 640px;
-        padding: 20px;
+        width: 650px;
+        padding: 20px 64px;
         transition: 0.4s ease-in-out;
     }
 
