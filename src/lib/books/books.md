@@ -7,7 +7,7 @@
 Category: Philosophy
 Subtitle: It was difficult to read and consume
 Rating: 5.5/10
-
+  
 ### Who Rules The World
 Category: Politics
 Subtitle: Hypocrisy of the powerfuls
@@ -22,6 +22,11 @@ Rating: 7.5/10
 Category: Biography
 Subtitle: Memoir book of Bill Gates, focused primarily his journey till Microsoft
 Rating: 6.5/10
+
+### Nudge
+Category: Economics
+Subtitle: A bit too dry text about behavorial economics
+Rating: 6/10
 
 ### Amusing Ourselves To Death
 Category: Non-fiction
@@ -71,6 +76,7 @@ Category: Non-fiction
 Subtitle: A great analysis of man's unhappiness despite the huge rise of economics 
 Rating: 8/10
 ### The Lily of The Valley
+Category: Fiction
 Subtitle: Good writing style, but I didn't enjoy the plot. It is about how women sacrifice themselves for others
 Rating: 4/10
 
