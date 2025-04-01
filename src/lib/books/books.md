@@ -1,6 +1,22 @@
 # Books I have read so far
 
+
 ## 2025
+
+### The Republic by Plato
+Category: Philosophy
+Subtitle: It was difficult to read and consume
+Rating: 5.5/10
+
+### Who Rules The World
+Category: Politics
+Subtitle: Hypocrisy of the powerfuls
+Rating: 7/10
+
+### The Count Of Monte Cristo
+Category: Fiction
+Subtitle: Divine justice
+Rating: 7.5/10
 
 ### Source Code by Bill Gates
 Category: Biography
