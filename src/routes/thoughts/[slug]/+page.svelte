@@ -20,14 +20,34 @@
 </script>
 
 <svelte:head>
+    <!-- Title and Basic Meta Tags -->
     <title>{post.title}</title>
     <meta name="description" content={post.subtitle}>
     <meta name="keywords" content={post.keywords}>
     <meta name="author" content={post.author}>
+
+    <!-- Viewport for Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={`https://shakhzod.co/thoughts/${post.slug}`}>
+
+    <!-- Open Graph Tags -->
     <meta property="og:title" content={post.title}>
     <meta property="og:description" content={post.subtitle}>
     <meta property="og:type" content="article">
+    <meta property="og:url" content={`https://shakhzod.co/thoughts/${post.slug}`}>
+    <meta property="og:image" content="https://shakhzod.co/static/images/default-post-image.png">
     <meta property="article:published_time" content={post.date}>
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={post.title}>
+    <meta name="twitter:description" content={post.subtitle}>
+    <meta name="twitter:image" content="https://shakhzod.co/static/images/default-post-image.png">
 </svelte:head>
 
 <div class={`blogContainer ${currentTheme}`}>

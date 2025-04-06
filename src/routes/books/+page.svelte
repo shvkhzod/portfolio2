@@ -1,3 +1,30 @@
+<svelte:head>
+    <title>{data.title}</title>
+    <meta name="description" content={`Explore over ${data.numberOfBooks} books Shakhzod has read, complete with ratings and personal insights.`} />
+    <meta name="keywords" content="books, reading list, book ratings, book reviews, Shakhzod, literature, recommendations" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shakhzod.co/books" />
+    <meta property="og:title" content={data.title} />
+    <meta property="og:description" content={`Explore over ${data.numberOfBooks} books Shakhzod has read, complete with ratings and personal insights.`} />
+    <meta property="og:image" content="https://shakhzod.co/static/images/bookPreview.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://shakhzod.co/books" />
+    <meta property="twitter:title" content={data.title} />
+    <meta property="twitter:description" content={`Explore over ${data.numberOfBooks} books Shakhzod has read, complete with ratings and personal insights.`} />
+    <meta property="twitter:image" content="https://shakhzod.co/static/images/bookPreview.png" />
+    
+    <!-- Additional SEO tags -->
+    <link rel="canonical" href="https://shakhzod.co/books" />
+    <meta name="author" content="Shakhzod" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</svelte:head>
+
+
 <div class={`bookContainer ${$currentTheme}`}> 
     <div class={`bookWrapper ${$currentTheme}`}>
         <h1 class={`title ${$currentTheme}`}>{data.title}</h1>
