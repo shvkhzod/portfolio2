@@ -34,12 +34,12 @@
     <meta property="og:description" content="List of thoughts" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://shakhzod.co/thoughts" />
-    <meta property="og:image" content="https://shakhzod.co/static/images/thoughtsPreview.png" />
+    <meta property="og:image" content="https://shakhzod.co/images/thoughtsPreview.png" />
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Shakhzod's Blog - Thoughts and Insights" />
     <meta name="twitter:description" content="Explore Shakhzod's blog posts on technology, design, personal growth, and more." />
-    <meta name="twitter:image" content="https://shakhzod.co/static/images/thoughtsPreview.png"  />
+    <meta name="twitter:image" content="https://shakhzod.co/images/thoughtsPreview.png"  />
 </svelte:head>
 
 <div class={`blogsWrap ${$currentTheme}`}>

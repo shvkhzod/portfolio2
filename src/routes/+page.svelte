@@ -37,7 +37,7 @@
 		property="og:description"
 		content="Software engineer and designer from the Heart of Silk Road"
 	/>
-	<meta property="og:image" content="https://shakhzod.co/static/images/preview.png" />
+	<meta property="og:image" content="https://shakhzod.co/images/preview.png" />
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
@@ -47,7 +47,7 @@
 		property="twitter:description"
 		content="Software engineer and designer from the Heart of Silk Road."
 	/>
-	<meta property="twitter:image" content="https://shakhzod.co/static/images/preview.png" />
+	<meta property="twitter:image" content="https://shakhzod.co/images/preview.png" />
 
 	<!-- Additional SEO tags -->
 	<link rel="canonical" href="https://shakhzod.co/" />
