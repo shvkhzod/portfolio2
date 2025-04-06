@@ -35,7 +35,7 @@
 	<meta property="og:title" content="Shakhzod - Software Engineer and Designer" />
 	<meta
 		property="og:description"
-		content="Software engineer and designer from the Heart of Silk Road"
+		content="Crafting digital tools for human needs"
 	/>
 	<meta property="og:image" content="https://shakhzod.co/images/preview.png" />
 
@@ -45,7 +45,7 @@
 	<meta property="twitter:title" content="Shakhzod - Software Engineer and Designer" />
 	<meta
 		property="twitter:description"
-		content="Software engineer and designer from the Heart of Silk Road."
+		content="Crafting digital tools for human needs"
 	/>
 	<meta property="twitter:image" content="https://shakhzod.co/images/preview.png" />
 
