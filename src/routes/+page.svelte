@@ -24,29 +24,21 @@
 <svelte:head>
 	<title>Shakhzod Sharifov</title>
 	<meta name="description" content="Crafting digital tools for human needs" />
-	<meta
-		name="keywords"
-		content="software engineer, designer, Uzbekistan, technology, art, projects, books, thoughts"
+	<meta name="keywords" content="software engineer, designer, Uzbekistan, technology, art, projects, books, thoughts"
 	/>
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://shakhzod.co/" />
 	<meta property="og:title" content="Shakhzod - Software Engineer and Designer" />
-	<meta
-		property="og:description"
-		content="Crafting digital tools for human needs"
-	/>
+	<meta property="og:description" content="Crafting digital tools for human needs"/>
 	<meta property="og:image" content="https://shakhzod.co/images/preview.png" />
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://shakhzod.co/" />
 	<meta property="twitter:title" content="Shakhzod - Software Engineer and Designer" />
-	<meta
-		property="twitter:description"
-		content="Crafting digital tools for human needs"
-	/>
+	<meta property="twitter:description" content="Crafting digital tools for human needs"/>
 	<meta property="twitter:image" content="https://shakhzod.co/images/preview.png" />
 
 	<!-- Additional SEO tags -->

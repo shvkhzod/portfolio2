@@ -3,6 +3,11 @@
 
 ## 2025
 
+### Key Philosophical Writings by Descartes
+Category: Philosophy
+Subtitle: More accessible and interesting philosophical takes, mainly about faith and existence
+Rating: 7/10
+
 ### The Republic by Plato
 Category: Philosophy
 Subtitle: It was difficult to read and consume
@@ -26,6 +31,11 @@ Rating: 6.5/10
 ### Nudge
 Category: Economics
 Subtitle: A bit too dry text about behavorial economics
+Rating: 6/10
+
+### Thinking Fast and Slow
+Category: Economics
+Subtitle: A bit over hyped book about behavioral economics
 Rating: 6/10
 
 ### Amusing Ourselves To Death
@@ -96,6 +106,11 @@ Subtitle: List of recommendations for writing technical and Non-fiction things
 Rating: 6/10
 
 
+### Structure and Interpretation of Programs
+Category: Computer Science
+Subtitle: Good explanation of computer science in a more intuitive way
+Rating: 7/10 
+
 ### Writing With Style: The Economist Guide
 Category: Writing
 Subtitle: Helped me to understand how to write copies that people like reading
@@ -141,10 +156,20 @@ Category: Fiction
 Subtitle: Very short story by Franz Kafka, at first it was weird, but after finishing it, I got the overall message. No matter how much you did good for anyone, they will hate you if you are not useful to them
 Rating: 7.5/10
 
+### No Logo
+Category: Marketing
+Subtitle: A bit political take about branding that is happening around the world
+Rating: 6.5/10
+
 ### Why Poor Countries Are Poor
 Category: Economics
 Subtitle: A book that took shots on Adam Smith. Well, it changed my perspective on the economy afterall
 Rating: 5.5/10
+
+### Writing To Learn
+Category: Writing
+Subtitle: Guide for better thinking and writing
+Rating: 6/10
 
 ## 2023
 

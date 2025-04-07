@@ -17,7 +17,7 @@
     <meta property="twitter:description" content={`Explore over ${data.numberOfBooks} books Shakhzod has read, complete with ratings and personal insights.`} />
     <meta property="twitter:image" content="https://shakhzod.co/images/bookPreview.png" />
     
-    <!-- Additional SEO tags -->
+    <!-- Additional SEO tags --> 
     <link rel="canonical" href="https://shakhzod.co/books" />
     <meta name="author" content="Shakhzod" />
     <meta name="robots" content="index, follow" />
