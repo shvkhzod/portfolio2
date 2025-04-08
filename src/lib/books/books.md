@@ -2,6 +2,11 @@
 
 ## 2025
 
+### On Writing Well
+Category: Writing
+Subtitle: Absolute must read for anyone who wants improve his writing skills
+Rating: 8/10
+
 ### Key Philosophical Writings by Descartes
 
 Category: Philosophy
