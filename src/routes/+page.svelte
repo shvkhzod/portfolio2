@@ -113,7 +113,7 @@
 		<div class={`list ${$currentTheme}`}>
 			<div class={`list ${currentTheme}`}>
 				{#each books as book}
-					<a href={`/books#${book.title.replace(/\s+/g, '-').toLowerCase()}`}>
+					<a href={`/books`}>
 						<TinyView title={book.title} subtitle={book.subtitle} />
 					</a>
 				{/each}
