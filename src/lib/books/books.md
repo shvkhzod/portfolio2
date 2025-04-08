@@ -231,6 +231,7 @@ Subtitle: Detailed look into the history ofTencent, a company that has shaped th
 Rating: 6/10
 
 ### Art of Computer Science
+
 Category: Programming
 Subtitle: It looked a bit overrated for me, the information is good, but I found it hard to consume it because of the way it was presented, too much formality and jargon
 Rating: 4/10
@@ -296,11 +297,13 @@ Rating: 3/10
 Category: Fiction
 Subtitle: Oh yeah, it was a great satire on communism. Very simple, yet interesting book
 Rating: 7/10
+
 ### Flowers For Algernon
 
 Category: Fiction
 Subtitle: One of the favorites. Probably one of the few books that actually made me emotional. Imaginary story that shows the importance of love, empathy and intelligence
 Rating: 8/10
+
 ### Stoner
 
 Category: Fiction
@@ -318,6 +321,7 @@ Rating: 3.5/10
 Category: Non-fiction
 Subtitle: It was my 2nd attempt to read this book, and I finally finished it. Now I understand the message of the book. Showed how our focus and productivity were destroyed in this modern world and how to get it back
 Rating: 6.5/10
+
 ### How To Become A Straight A Student
 
 Category: Non-fiction
