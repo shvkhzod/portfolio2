@@ -329,6 +329,12 @@ Rating: 5.5/10
 Category: Non-fiction
 Subtitle: Another bad selfhelp book
 Rating: 4/10
+
+### Grokking Algorithms
+Category: Computer Science
+Subtitle: The best book I have ever read about algorithms and data structures
+Rating: 8.5/10
+
 ### Zag
 Category: Marketing
 Subtitle: Amazing book about differentiation and innovation
