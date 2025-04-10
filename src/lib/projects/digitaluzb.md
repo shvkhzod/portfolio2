@@ -3,7 +3,7 @@ title: "Digitaluzb"
 subtitle: "Community of programmers and designers"
 url: "digitaluzb"
 date: "02 May 2023"
-thumbnail: "./images/digitalThumb.webp"
+thumbnail: "./images/digitalThumb2.webp"
 ---
 
 ![Digitaluzb Thumbnail](/images/digitalThumb2.webp)
