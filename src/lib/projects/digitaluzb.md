@@ -6,7 +6,7 @@ date: "02 May 2023"
 thumbnail: "./images/digitalThumb.webp"
 ---
 
-![Digitaluzb Thumbnail](/images/digitalThumb.webp)
+![Digitaluzb Thumbnail](/images/digitalThumb2.webp)
 
 I created a community of programmers and designers consisting of 2000 people on Instagram
 
