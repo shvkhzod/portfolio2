@@ -2,6 +2,16 @@
 
 ## 2025
 
+### Licence To Be Bad
+Category: Economics
+Subtitle: Big Economics ideas, such as Game Theory that changed the way we live
+Rating: 6.5/10
+
+### The Undercover Economist
+Category: Economics
+Subtitle: Analysis of important econ topics in real life examples
+Rating: 6/10
+
 ### On Writing Well
 Category: Writing
 Subtitle: Absolute must read for anyone who wants improve his writing skills
