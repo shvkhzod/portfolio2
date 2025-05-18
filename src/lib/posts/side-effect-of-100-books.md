@@ -9,16 +9,21 @@ keywords: 'Reading, 100, Books'
 
 ![Unwanted thumbnail](/images/us.png)
 
+These days everybody recommends reading. Do you want to be a better reason, do you want to be person of value, then read a book.
 I thought that reading was a recipe for success. It took me 6 years and 100 books to realize that I was wrong. 
 
-Everybody recommends reading. Do you want to be a better reason, do you want to be person of value, then read a book.
+Since I started reading, I focused on non-fiction category. After all they are based on facts and they are applicable to real life. I wasted 2 years on self-help books(Rich Dad Poor Dad, How To Think and Grow Rich, my God). Then slowly found my favorite niche and authors. 
 
-With my little experience in reading(100+ books in 6 years), I concluded that sometimes reading does more harm than good.
+I started enjoying it, reading became my habit.
 
-It gave me knowledge, which is a must in every field. It also gave me dopamine, creating an illusion that I was getting better, when in fact I was just unloading the soon-to-be-forgotten information to my brain. I study computer science, the topics are very dense in this field. So every time I faced doing something, I felt the need of "reading" about the topic. After finishing one book, I needed another book before I could feel comfortable starting the thing. Then another. Then another.
+I felt as if each book was making me smarter. But I was wrong. Non-fiction didn't make me smarter, it did what it's supposed to do - provide with surface level knowledge. Bestseller writers choose common topics and make them very easy to read. They would fail to sell millions of copies, if they made books filled with knowledge. I mean the pure knowledge, not the one that you can read and understand in supermarket queue. 
 
-I was just using books to make myself feel better. To hide the fact that I was not progressing. In the, my mind was processing information all the time. It was "busy". But not productive.
+So I picked up textbooks. I remembered what is "real" learning. Textbooks are uncomfortable to read, because I need to focus, contemplate and memorize the contents.
 
-I am not saying reading itself is bad, but being stuck in "learning cycle" is. Unless I apply the knowledge from the books to real problems, then it is mental entertainment
+I also used books not to the actual thing. For example, I preffered reading about Algorithms rather than writing real the real code.
 
-100 books were not total waste either, at least they made me to reflect at things that I am doing. I still read several pages a day. Now my approach is different though. First I approach the problem myself, then find the knowledge to fix the problem. 
+I am not saying reading itself is bad, but being stuck in "learning cycle" is. Unless I apply the knowledge from the books to real problems, then it is mental entertainment(central idea of non-fiction)
+
+That being said, I was wrong about fiction too. I wondered why would I read made up tale. Apparently, each fiction book has several topics that it deals with. The contents are seriously clued to the characters. So it actually makes the ideas memorable. For example, I read the The Mount of Monte Cristo, now the idea of resilent and honourable man lives in my mind. And whenever I face certain situations that is relatable to the book I remember him.
+
+In conlusion, if I started over reading, I would prioritize textbooks and classic fiction books over today's non-fiction bestsellers. I would also read more essays and study papers.

@@ -193,6 +193,7 @@ onMount(() => {
       gap: 8px;
     }
 
+
     
   .navWrapper {
     padding: 0px 24px;

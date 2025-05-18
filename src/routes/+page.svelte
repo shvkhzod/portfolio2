@@ -461,6 +461,7 @@
 	@media (max-width: 768px) {
 		a {
 			text-decoration: none;
+			font-weight: 500;
 		}
 		.mainContainer {
 			width: 100%;
@@ -506,7 +507,8 @@
 			margin-top: 32px;
 			text-align: left;
 			color: white;
-			font-weight: 400;
+			font-weight: 500;
+			letter-spacing: -0.6px;
 			line-height: 24px;
 			opacity: 100%;
 			transition: 0.4s ease-in-out;
@@ -534,7 +536,8 @@
 			margin-top: 20px;
 			text-align: left;
 			color: white;
-			font-weight: 400;
+			font-weight: 500;
+			letter-spacing: -0.6px;
 			line-height: 24px;
 			opacity: 100%;
 			transition: 0.4s ease-in-out;
@@ -677,8 +680,9 @@
 		.light .subtitle {
 			margin-top: 32px;
 			text-align: left;
-			font-weight: 400;
+			font-weight: 500;
 			line-height: 24px;
+			letter-spacing: -0.6px;
 			color: black;
 			opacity: 50%;
 			transition: 0.4s ease-in-out;
@@ -687,7 +691,8 @@
 			line-height: 24px;
 			margin-top: 20px;
 			text-align: left;
-			font-weight: 400;
+			font-weight: 500;
+			letter-spacing: -0.6px;
 			color: black;
 			opacity: 50%;
 			transition: 0.4s ease-in-out;
@@ -695,6 +700,7 @@
 
 		.light .links a {
 			color: black;
+			font-weight: 600;
 			opacity: 50%;
 			text-decoration: underline;
 			text-underline-offset: 4px;

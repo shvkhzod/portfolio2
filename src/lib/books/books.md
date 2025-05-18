@@ -2,6 +2,16 @@
 
 ## 2025
 
+### Inventive Minds
+Category: Education
+Subtitle: Collection of essays by Marvin Minsky, addressed to children Education
+Rating: 6/10
+
+### Computer Systems: A Programmer's Perspective
+Category: Computer Science
+Subtitle:  From the motherboard to displaying the hello world, it explains everything in and out.
+Rating: 6/10
+
 ### Licence To Be Bad
 Category: Economics
 Subtitle: Big Economics ideas, such as Game Theory that changed the way we live
