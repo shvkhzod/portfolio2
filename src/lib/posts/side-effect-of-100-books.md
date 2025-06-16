@@ -33,8 +33,10 @@ I am not saying reading itself is bad, but being stuck in "learning cycle" is. U
 
 That being said, I was wrong about fiction too. I wondered why would I read made up tale. Apparently, each fiction book has several topics that it deals with. The contents are seriously clued to the characters. So it actually makes the ideas memorable. For example, I read the The Mount of Monte Cristo, now the idea of resilent and honourable man lives in my mind. And whenever I face certain situations that is relatable to the book I remember him.
 
-In conlusion, if I started over reading, I would prioritize textbooks and classic fiction books over today's non-fiction bestsellers. I would also read more essays and study papers. 
+In conlusion, if I started over reading, I would prioritize textbooks and classic fiction books over today's non-fiction bestsellers. I would also read more essays and study papers. I would do more, but I can't
 
-I wish I could fail more and don't feel the burden in my heart. Till now I struggle with mistakes and losses. I wish I could do more. I wish I felt more confident about risks. I wish I didn't overthink every decision. 
+Because I feel the burden in my heart everytime I make a wrong move. Till now I struggle with mistakes and losses. I wish I was more resilent and mature about it. I wish I could shut up that inner kid that only accepts success. I wish I felt more confident about risks. I wish I didn't overthink every decision. 
 
-100 books could not make me achieve above mentioned values, maybe 500 will, maybe 1000 will. But I doubt it. Whatever, eat more ice cream
+100 books could not make me achieve above mentioned values, maybe 500 will, maybe 1000 will. But I doubt it. My current take on books is that they are a bit overrated, and knowledge without action is just waste of time
+
+
