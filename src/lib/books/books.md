@@ -8,10 +8,16 @@ Subtitle: Opinion based book about how education system is being used a tool to 
 Rating: 5.5/10 
 
 
+### Lucky Loser
+Category: Politics
+Subtitle: Two NY Times Authors investigated Trump, and wrote their result. In short, Donald only acts as "successful"
+Rating: 5.5/10
+
 ### Inventive Minds
 Category: Education
 Subtitle: Collection of essays by Marvin Minsky, addressed to children Education
 Rating: 6/10
+
 
 ### Computer Systems: A Programmer's Perspective
 Category: Computer Science
