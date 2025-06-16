@@ -16,9 +16,11 @@ Since I started reading, I focused on non-fiction category. After all they are b
 
 I started enjoying it, reading became my habit.
 
-I felt as if each book was making me smarter. But I was wrong. Non-fiction didn't make me smarter, it did what it's supposed to do - provide with surface level knowledge. Bestseller writers choose common topics and make them very easy to read. They would fail to sell millions of copies, if they made books filled with knowledge. I mean the pure knowledge, not the one that you can read and understand in supermarket queue. 
+I felt as if each book was making me smarter. But I was wrong. Non-fiction didn't make me smarter, it did what it's supposed to do - provide with surface level knowledge. The recipe for bestseller book is simple. Writers need to choose popular topics(success, money, relationship, eetc) and make them very easy to read. 
 
-So I picked up textbooks. I remembered what is "real" learning. Textbooks are uncomfortable to read, because I need to focus, contemplate and memorize the contents.
+Now thanks to the AI and short videos, we cannot focus in one task more than 3 minutes. Let alone reading books, we cannot read messages longer than 4 sentences anymore. So authors have to choose common sense things and explain as if we are 6 year olds
+
+So after my frustration, I picked up textbooks. I remembered what is "real" learning. Textbooks are uncomfortable to read, because I need to focus, contemplate and memorize the contents.
 
 I also used books not to the actual thing. For example, I preffered reading about Algorithms rather than writing real the real code.
 
