@@ -37,6 +37,8 @@ In conlusion, if I started over reading, I would prioritize textbooks and classi
 
 Because I feel the burden in my heart everytime I make a wrong move. Till now I struggle with mistakes and losses. I wish I was more resilent and mature about it. I wish I could shut up that inner kid that only accepts success. I wish I felt more confident about risks. I wish I didn't overthink every decision. 
 
-100 books could not make me achieve above mentioned values, maybe 500 will, maybe 1000 will. But I doubt it. My current take on books is that they are a bit overrated, and knowledge without action is just waste of time
+100 books could not make me achieve above mentioned values, maybe 500 will, maybe 1000 will. But I doubt it. My current take on books is that they are a bit overrated, and education is not answer for everything
+
+*PS: This essay is not advice or message adressed to others. It is adressed to myself. I wrote it to understand myself*
 
 
