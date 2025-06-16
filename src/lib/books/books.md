@@ -2,6 +2,12 @@
 
 ## 2025
 
+### Ignorance
+Category: Education
+Subtitle: Opinion based book about how education system is being used a tool to keep the social class divided
+Rating: 5.5/10 
+
+
 ### Inventive Minds
 Category: Education
 Subtitle: Collection of essays by Marvin Minsky, addressed to children Education
