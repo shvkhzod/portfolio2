@@ -3,6 +3,7 @@ title: 'Side Effect of 100 books'
 subtitle: 'How too much reading affected me in a negative way'
 date: '21 June 2025'
 category: 'Reading'
+thubnail: '/images/see.webp'
 published: true 
 keywords: 'Reading, 100, Books'
 ---
