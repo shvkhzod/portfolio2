@@ -11,6 +11,8 @@
     $: post = data.post as Post;
 
     let content: string;
+    console.log(data)
+
 
     onMount(() => {
         if (browser) {
