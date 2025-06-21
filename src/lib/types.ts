@@ -6,7 +6,8 @@ export type Post = {
 	subtitle: string
 	date: string
 	category: string,
-	keywords: string
+	keywords: string,
+	thumbnail: string,
 	author: "Shakhzod"
 	content: string;
 	published: boolean

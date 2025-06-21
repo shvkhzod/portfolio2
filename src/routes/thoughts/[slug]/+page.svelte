@@ -40,14 +40,14 @@
     <meta property="og:description" content={post.subtitle}>
     <meta property="og:type" content="article">
     <meta property="og:url" content={`https://shakhzod.co/thoughts/${post.slug}`}>
-    <meta property="og:image" content="https://shakhzod.co/static/images/default-post-image.png">
+    <meta property="og:image" content={post.thumbnail}>
     <meta property="article:published_time" content={post.date}>
 
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content={post.title}>
     <meta name="twitter:description" content={post.subtitle}>
-    <meta name="twitter:image" content="https://shakhzod.co/static/images/default-post-image.png">
+    <meta name="twitter:image"content={post.thumbnail}>
 </svelte:head>
 
 <div class={`blogContainer ${currentTheme}`}>
