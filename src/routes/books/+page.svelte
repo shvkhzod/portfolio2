@@ -64,7 +64,7 @@
         {/each}
     </div>
 </div>
-
+{console.log(selectedCategory, selectedRating, filteredYearGroups)}
 <script lang="ts">
     import { theme } from '../../utils/theme';
     import { writable, type Writable } from 'svelte/store';
@@ -92,6 +92,20 @@
         currentTheme.set(value);
     });
 
+    onMount(() => {
+        if (typeof window !== 'undefined') {
+            destroyScroll = () => {
+                document.documentElement.style.scrollBehavior = 'auto';
+            };
+            document.documentElement.style.scrollBehavior = 'smooth';
+        }
+    });
+
+    onDestroy(() => {
+        if (destroyScroll) {
+            destroyScroll();
+        }
+    });
 </script>
 
 <style>
