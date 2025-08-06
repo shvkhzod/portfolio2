@@ -2,6 +2,31 @@
 
 ## 2025
 
+### Surely You're Joking Mr.Feynman
+Category: Memoir
+Subtitle: Adventures of genius man, very inspiring and funny
+Rating: 7/10
+
+### Unreasonable Hospitality
+Category: Hospitality
+Subtitle: Hands on insights on how any business can use hospitality to deliver more than expected
+Rating: 6.5/10
+
+### Down and Out in Paris and London
+Category: Memoir
+Subtitle: Orwell's life in poverty, makes you think about minimum wage jobs
+Rating: 6.5/10
+
+### Resilience by HBR
+Category: Leadership
+Subtitle: Mediocre book or collection of article
+Rating: 4/10
+
+### Nothing but a Circus
+Category: Politics
+Subtitle: Shows the corruptness of some people in power, even in places UN 
+Rating: 6/10
+
 ### Ignorance
 Category: Education
 Subtitle: Opinion based book about how education system is being used a tool to keep the social class divided

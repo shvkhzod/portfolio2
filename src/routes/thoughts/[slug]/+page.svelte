@@ -51,7 +51,7 @@
     <meta name="twitter:description" content={post.subtitle}>
     <meta name="twitter:image"content={post.thumbnail}>
 </svelte:head>
-
+<p>{post.thumbnail}</p>
 <div class={`blogContainer ${currentTheme}`}>
     <div class={`blogWrapper ${currentTheme}`}>
         {#if post}
