@@ -2,6 +2,21 @@
 
 ## 2025
 
+### Perfection
+Category: Fiction
+Subtitle: Emptiness of contemporary life
+Rating: 5/10
+
+### Les Miserables
+Category: Fiction
+Subtitle: Redemption, endless fight of Conscience and honesty 
+Rating: 7/10
+
+### The Creative Act
+Category: Art
+Subtitle: More of routing suggested by Rick Rubin for creative state
+Rating: 6/10
+
 ### Surely You're Joking Mr.Feynman
 Category: Memoir
 Subtitle: Adventures of genius man, very inspiring and funny
