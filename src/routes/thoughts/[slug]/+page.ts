@@ -1,20 +1,18 @@
-	// src/routes/blog/[slug]/page.ts
-
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ data, fetch }) => {
-    // Prefetch next and previous posts
-    const prefetchNextPost = fetch('/api/posts/next/' + data.post.slug).then(r => r.json());
-    const prefetchPrevPost = fetch('/api/posts/prev/' + data.post.slug).then(r => r.json());
+    // Await the data before returning
+    const [nextPost, prevPost] = await Promise.all([
+        fetch(`/api/posts/next/${data.post.slug}`).then(r => r.json()).catch(() => null),
+        fetch(`/api/posts/prev/${data.post.slug}`).then(r => r.json()).catch(() => null)
+    ]);
 
     return {
         post: data.post,
         layout: {
             fullWidth: true,
         },
-        streamed: {
-            nextPost: prefetchNextPost,
-            prevPost: prefetchPrevPost
-        }
+        nextPost,  // ✅ Return the actual data, not promises
+        prevPost
     };
 };
