@@ -2,6 +2,11 @@
 
 ## 2025
 
+### What's Intelligence
+Category: Non-Fiction
+Subtitle: Complex ideas by the lead of Google Research team about Intelligence
+Rating: 5.5/10
+
 ### Perfection
 Category: Fiction
 Subtitle: Emptiness of contemporary life

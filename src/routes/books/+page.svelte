@@ -325,5 +325,21 @@
         border: none;
     }
 
+    @media (max-width: 568px) {
+        .selections {
+            height: 52px;
+        }
+
+        .filters {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .dark.bookHeader {
+            gap: 20px;
+        }
+    }
+
   </style>
 
