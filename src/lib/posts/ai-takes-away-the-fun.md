@@ -17,7 +17,7 @@ It felt like Thanos's glove with inifinity stones. You think of something and sn
 
 I saved my time and energy by delegating my tasks to it. Ranging from simple emails to fully ready course works. Once you see the power of the thing, you cannot unsee it. Like why do I need to waste my precious hours on writing this boring essay, when I can have Shakespeare level essay in 30 seconds with AI, right?
 
-No. After some time I realized that I don't feel the same way I do when I finish my tasks with it. There is always something missing inside me. I don't feel the ownership, pride and excitement. I just feel empty. It makes me depressed. When I generate an email with AI, my dignity gets attacked. Are you that dumb? Are you that dead? 
+No. After some time I realized that I don't feel the same way I did when I finished my tasks without it. There is always something missing inside me when I finish something with AI. I don't feel the ownership, pride and excitement. I just feel empty. It makes me depressed. When I generate an email with AI, my dignity gets attacked. Are you that dumb? Are you that dead? 
 
 I have never been in a flow while using AI. But I clearly remember the times when I didn't feel the hours pass by while coding my projects. 
 
