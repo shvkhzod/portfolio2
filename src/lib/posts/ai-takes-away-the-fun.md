@@ -21,14 +21,14 @@ No. After some time I realized that I don't feel the same way I did when I finis
 
 I have never been in a flow while using AI. But I clearly remember the times when I didn't feel the hours pass by while coding my projects. 
 
-There is joy in doing things. There is a little play. There is a litle life in it. Even in boring tasks.If they are delegated to AI, then whole life is delegated to it.
+There is joy in doing things. There is a little play. There is a litle life in it. Even in boring tasks. If they are delegated to AI, then whole life is delegated to it.
 
 You might say, what's the point of doing all these tasks yourself anyway. Then, what's the point of living, anyway? 
 
 As humans we are obsessed with results only. The thing that makes the result valuable is the process. The process that requires effort and time. AI removes the process. Thereby, it takes away the proof of work. When you saw a text or book before, you had some confidence that someone actually spent some time writing it. Now you don't have that luxury.
 
 
-MIT recently published a study proving that AI is making us dumber. I agree with them. If we are put in wildlife, most of us cannot survive at all. We are not like our ancestors that lived 1000 years ago. Technology made life easier and comfortable, so we forgot our survival skills, because we don't use it. Now the loss will not be our physical abilities, but the mental ones. We will forget how to analyze, research, syntethize, write, anything we make AI do us for us. It is very pessimistic take. And probably, a hypocritical one too.
+MIT recently published a study proving that AI is making us dumber. I agree with them. If we are put in wildlife, most of us cannot survive at all. We are not like our ancestors that lived 1000 years ago. Technology made life easier and comfortable, so we forgot our survival skills, because we don't use it. But this time the loss will not be our physical abilities, but the mental ones. We will forget how to analyze, research, syntethize, write, anything we make AI do us for us. It is very pessimistic take. And probably, a hypocritical one too.
 
 But that's why I say
 
