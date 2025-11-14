@@ -1,14 +1,14 @@
 ---
 title: 'AI Takes Away The Fun'
-subtitle: 'My thoughts on delegating the tasks to AI'
-date: '20 November 2025'
+subtitle: 'AI emptying our hearts'
+date: '14 November 2025'
 category: 'AI'
+thumbnai: 'images/fun.webp'
 published: true 
 keywords: 'Aritifical Intelligence, AI, creativity, essay'
 ---
 
-Artificial Intelligence is making things easier, faster and less meaningful
-
+Artificial Intelligence is making things easier, faster and meaningless
 I have been using AI since December, 2022. It was dumb and slow, but fun at first.
 
 It felt like Thanos's glove with inifinity stones. You think of something and snap your fingers.
@@ -27,4 +27,14 @@ As humans we are obsessed with results only. The thing that makes the result val
 
 MIT recently published a study proving that AI is making us dumber. I agree with them. If we are put in wildlife, most of us cannot survive at all. We are not like our ancestors were 1000 years ago. Technology made life easier and comfortable, so we forgot our survival skills, because we don't use it. Now the loss will not be our physical abilities, but the mental ones. We will forget how to analyze, research, syntethize, write, anything we make AI do us for us. It is very pessimistic take. And probably, a hypocritical one too.
 
-LLMs are still bad with novelty. They cannot create something "new". They only rearrange already existing information.Originality derives from our uniquely personal experiences, from our thoughts in the shower, from our dreams
+But that's why I say
+
+LLMs are still bad with novelty. They cannot create something "new". They only rearrange already existing information.Originality derives from our uniquely personal experiences, from our thoughts in the shower, from our dreams,from the sound of the river.
+
+Find a name yourself, write that email with your own individual voice, put some effort and analyze the large text yourself. Search from the books. Ask people. 
+
+In short, stay human. Please
+
+I am going to end this essay with the quote by Descartes. He once proved his existence with famous line:"I think, therefore I am"
+
+I say: "I do, therefore I am"
