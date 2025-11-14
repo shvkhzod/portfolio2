@@ -1,7 +1,7 @@
 ---
 title: 'Avoiding Uncreativity'
 subtitle: 'My approach how to overcome uncreativity in a time where the focus and attention are totally broken and destroyed'
-date: '15 Jan 2024'
+date: '15 January 2024'
 category: 'General'
 published: true 
 keywords: 'Creative, Avoid, Focus, Approach'

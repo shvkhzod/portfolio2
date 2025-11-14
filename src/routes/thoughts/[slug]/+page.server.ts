@@ -12,13 +12,6 @@ export const load: PageServerLoad = async ({ params }) => {
     
     // Return only necessary data
     return {
-        post: {
-            title: post.title,
-            thumbnail: post.thumbnail,
-            date: post.date,
-            subtitle: post.subtitle,
-            content: post.content,
-            // Add other necessary fields
-        }
+      post
     };
 };
