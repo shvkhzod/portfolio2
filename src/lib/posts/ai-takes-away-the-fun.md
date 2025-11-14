@@ -3,7 +3,7 @@ title: 'AI Takes Away The Fun'
 subtitle: 'AI emptying our hearts'
 date: '14 November 2025'
 category: 'AI'
-thumbnai: 'images/fun.webp'
+thumbnail: '/images/fun.webp'
 published: true 
 keywords: 'Aritifical Intelligence, AI, creativity, essay'
 ---
