@@ -8,7 +8,7 @@ published: true
 keywords: 'Aritifical Intelligence, AI, creativity, essay'
 ---
 
-Artificial Intelligence is making things easier, faster and meaningless
+Artificial Intelligence is making things easier, faster and meaningless.
 I have been using AI since December, 2022. It was dumb and slow, but fun at first.
 
 It felt like Thanos's glove with inifinity stones. You think of something and snap your fingers.
