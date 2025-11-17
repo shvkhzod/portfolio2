@@ -3,6 +3,7 @@ title: 'Fake Fog'
 subtitle: 'Writing has lost its purpose in academia'
 date: '29 Sep 2024'
 category: 'General'
+thumbnail: '/images/fog.webp'
 published: true
 keywords: 'Writing, Academic Writing'  
 ---
