@@ -2,6 +2,32 @@
 
 ## 2025
 
+### 100-Page Machine Learning Book
+Category: Non-Fiction
+Subtitle: Supplementary book for my Data Science course, very clear and short explanation of ML
+Category: AI/ML 
+
+
+### Otkan Kunlar by Qodiriy
+Category: Fiction
+Subtitle: Modern version of Farhod and Shirin illustrating the nuances of Uzbek marriage
+Rating: 8.5/10
+
+### Xamsa by Navoiy
+Category: Fiction
+Subtitle: Collection of poems by Sultan of the words
+Rating: 6.5/10
+
+### In Our Time
+Category: Fiction
+Subtitle: Gave another chance to Hemmingway, I was expecting a bit more depth in the stories
+Rating: 5/10  
+
+### The Old Man and The Sea
+Category: Fiction
+Subtitle: My introduction to Hemmingway, I was dissapointed 
+Rating: 5/10
+
 ### What's Intelligence
 Category: Non-Fiction
 Subtitle: Complex ideas by the lead of Google Research team about Intelligence

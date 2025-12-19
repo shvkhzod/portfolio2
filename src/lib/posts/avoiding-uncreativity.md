@@ -7,11 +7,11 @@ published: true
 keywords: 'Creative, Avoid, Focus, Approach'
 ---
 
-Alright, let's be honest, creativity isn't always our default setting. As a developer and designer, I'm constantly on the hunt for inspiration, and most of the time it's just not there. But I've found some ways that helped me to overcome the creative block
+As a developer and designer, I'm constantly searching for inspiration, and most of the time it's just not there. But I've found some ways that helped me to overcome the creative block
 
-## Ditch the scroll
+## Staying away from the screen
 
-We all know that social media is just sucking up all our energy and focus , even with that knowledge, we just let it crush our attention. It is ingrained habit. Quite recently, my screen time(social media and etc) was more than 6 hours. I felt that my brain was rotting. So I just put time limits and started to be in the real world more. And guess what, when I am not scrolling, I am actually thinking. And that's when the ideas come
+We all know that social media is just sucking up all our energy and focus , even with that knowledge, we just let it crush our attention. It is ingrained habit. Quite recently, my screen time(social media and etc) was more than 6 hours. I felt that my brain was rotting. So I just put time limits and started to be in the real world more. And guess what, when I am not scrolling, I am actually thinking.
 
 ## Be Bored
 
