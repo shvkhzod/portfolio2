@@ -6,6 +6,7 @@
 Category: Non-Fiction
 Subtitle: Supplementary book for my Data Science course, very clear and short explanation of ML
 Category: AI/ML 
+Rating: 6/10
 
 
 ### Otkan Kunlar by Qodiriy
