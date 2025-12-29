@@ -2,10 +2,20 @@
 
 ## 2025
 
-### 100-Page Machine Learning Book
+### Najot Yo'li by Abdurauf Fitrat
 Category: Non-Fiction
+Subtitle: Fitrat's view about broken education system and how to fix it
+Rating: 8/10
+
+### Al Pacino: Sonny Boy
+Category: Memoir
+Subtitle: An amazing autobiography by Al Pacino, it is always interesting to hear the story of these type of people
+Rating: 6.5/10
+
+
+### 100-Page Machine Learning Book
+Category: AI/ML
 Subtitle: Supplementary book for my Data Science course, very clear and short explanation of ML
-Category: AI/ML 
 Rating: 6/10
 
 
