@@ -1,5 +1,37 @@
 # Books I have read so far
 
+## 2026
+
+### How Fiction Works 
+Category: Writing
+Subtitle: A bit vague analysis of literature to study novels
+Rating: 5.5/10
+
+### Machine Learning by Them Alpaydin
+Category: AI/ML
+Subtitle: General overview of Machine learning in bite sized information
+Rating: 6/10
+
+### Portrait of Dorian Gray
+Category: Fiction
+Subtitle: I liked how Oscar Wilde used metaphors to talk about soul ,devil and conscience
+Rating: 6.5/10
+
+### Norwegian Wood
+Category: Fiction
+Subtitle: Story of a student going through the loss of a friend and confused love
+Rating: 5.5/10
+
+### Short Film: Screenwriting
+Category: Writing
+Subtitle: Average information about writing short films
+Rating: 5.5/10
+
+### Save The Cat
+Category: Writing
+Subtitle: Very fun book about screenwriting
+Rating: 7/10
+
 ## 2025
 
 ### Najot Yo'li by Abdurauf Fitrat
