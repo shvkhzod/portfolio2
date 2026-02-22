@@ -17,7 +17,10 @@ const config = {
     ],
 
     kit: {
-        adapter: adapter()
+        adapter: adapter(),
+        prerender: {
+            entries: ['*', '/thoughts/real-letter-to-future']
+        }
     }
 };
 
