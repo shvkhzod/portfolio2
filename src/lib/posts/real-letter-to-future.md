@@ -43,7 +43,7 @@ I hope you stopped running from responsibilities. I hope you stopped hating your
 
 You are not special. You are ordinary. Just an average person.
 
-I hope you didn't forget that Will outweighs the Education. It is more about the questions than answers.There is no learning for the sake of learning, I hope it finally clicked to you. Competition exists, but nobody wins here. Everyone loses. It just about how much one can bear. None of the books you have read matters. Neither the whole act reading itself. You do it so that you feel good about yourself. To delay the guilt. The guilt that comes from not achieving anything. Not being worthy to anything. You are way off than you realize. Universe is smaller than the distance between you and your goals. And here you are wishing impossible things, how hyocrical you are.
+I hope you didn't forget that Will outweighs the Education. It is more about the questions than answers.There is no learning for the sake of learning, I hope it finally clicked to you. Competition exists, but nobody wins here. Everyone loses. It just about how much one can bear. None of the books you have read matters. Neither the whole act of reading itself. You do it so that you feel good about yourself. To delay the guilt. The guilt that comes from not achieving anything. Not being worthy to anything. You are way off than you realize. Universe is smaller than the distance between you and your goals. And here you are wishing impossible things, how hypocritical you are.
 
 I don't know. I hope you changed. I hope you made the distance smaller. I hope you did something. I hope you said something. I hope you saved me, saved us
 
