@@ -26,5 +26,6 @@ async function getPosts() {
 
 export async function GET() {
     const posts = await getPosts()
-    return json(posts)
+    const visible = posts.filter(post => !post.unlisted)
+    return json(visible)
 }

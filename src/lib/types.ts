@@ -11,6 +11,7 @@ export type Post = {
 	author: "Shakhzod"
 	content: string;
 	published: boolean
+	unlisted?:boolean
 }
 
 export interface Project {

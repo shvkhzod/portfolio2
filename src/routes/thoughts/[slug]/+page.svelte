@@ -9,16 +9,7 @@
 
     $: currentTheme = $theme;
     $: post = data.post as Post;
-
-    let content: string;
-    console.log(data)
-
-
-    onMount(() => {
-        if (browser) {
-            content = post.content;
-        }
-    });
+$: content = browser ? post.content : '';
 </script>
 
 <svelte:head>
@@ -133,6 +124,23 @@
         border-radius: 16px;
     }
 
+    .dark :global(.blogContent ul) {
+    list-style: none;
+    padding-left: 1em;
+
+     color: #d8d8d8;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        transition: 0.4s ease-in-out;
+
+}
+
+.dark :global(.blogContent ul li::before) {
+    content: "– ";
+    margin-left: -1em;
+}
+
     /* Light */
     .light.blogContainer {
         width: 100%;
@@ -198,6 +206,47 @@
         border-radius: 16px;
     }
 
+.light :global(.blogContent ul) {
+    list-style: none;
+    padding-left: 1em;  
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    transition: 0.4s ease-in-out;
+            color: #808080;
+
+}
+
+.light :global(.blogContent ul li::before) {
+    content: "– ";
+    margin-left: -1em;
+}
+
+.dark :global(.blogContent a) {
+    color: #d8d8d8;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    opacity: 0.7;
+    transition: 0.4s ease-in-out;
+}
+
+.dark :global(.blogContent a:hover) {
+    opacity: 1;
+}
+
+.light :global(.blogContent a) {
+    color: #808080;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    opacity: 0.7;
+    transition: 0.4s ease-in-out;
+}
+
+.light :global(.blogContent a:hover) {
+    opacity: 1;
+}
+
+
     @media (max-width: 768px) {
         .light .blogWrapper {
             width: 100%;
@@ -214,6 +263,16 @@
         }
         .light :global(.blogContent p) {
             line-height: 24px;
+    }
+
+       .light :gloabl(ul) {
+         list-style: none;
+          padding-left: 1em;
+          color: #808080;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        transition: 0.4s ease-in-out;
     }
 
     .dark :global(.blogContent p) {
