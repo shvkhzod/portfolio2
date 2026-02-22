@@ -1,5 +1,7 @@
 import type { PageLoad } from './$types';
 
+export const prerender = false;
+
 export const load: PageLoad = async ({ data, fetch }) => {
     // Await the data before returning
     const [nextPost, prevPost] = await Promise.all([

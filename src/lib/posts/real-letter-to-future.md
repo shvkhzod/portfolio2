@@ -24,9 +24,9 @@ I have 2 regrets so far, I hope that number didn't surpass 10.
 I hope getting old is not as scary as I thought. I hope... just a second, let me refill my cup of tea. The green tea tastes so nice right now. I hope you remember how it tasted. I know that your memory, specifically our memory stamps random unnecessary stuff forever, may this moment be one of them.
 
 
-I hope you achieved your one big dream. The only one that lies deep down your heart. If you didn't achieve it then I hope you found enough strength to forgive yourself. 
+I hope you achieved your one big dream. The only one that lies deep down your heart. If you didn't achieve it then I hope you found enough strength to forgive yourself.
 
-Fourth cup of tea. 
+Fourth cup of tea.
 
 I can only think of career right now. What else is there to ask, old man.
 
@@ -49,6 +49,4 @@ I don't know. I hope you changed. I hope you made the distance smaller. I hope y
 
 Lastly, I hope the Picture of You shows the same kid that thought he could do big things
 
-
-
--51.5213, -0.1520.
+-51.5213, -0.1520
