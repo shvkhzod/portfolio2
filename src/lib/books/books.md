@@ -218,25 +218,25 @@ Rating: 6/10
 
 ### Amusing Ourselves To Death
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Arguments that makes you reconsider your whole view about digitized information
 Rating: 8/10
 
 ### Muqadimmah
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: An overview of history, religion, economics, politics and science of 14th century
 Rating: 6.5/10
 
 ### The Art of Doing Science and Engineering
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Great ideas from Richard Hamming himself. Many of his predictions are very close, especially about AI
 Rating: 6.5/10
 
 ### Oleg Tinkov: I am like everyone else
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Biography of russian millioner Oleg Tinkov, a very straightforward and honest person
 Rating: 6.5/10
 
@@ -269,7 +269,7 @@ Rating: 6.5/10
 
 ### Sane Society
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: A great analysis of man's unhappiness despite the huge rise of economics 
 Rating: 8/10
 
@@ -294,7 +294,7 @@ Rating: 5/10
 ### The Sense of Style: The Thinking Person's Guide in Writing
 
 Category: Writing
-Subtitle: List of recommendations for writing technical and Non-fiction things
+Subtitle: List of recommendations for writing technical and Non-Fiction things
 Rating: 6/10
 
 
@@ -324,7 +324,7 @@ Rating: 8/10
 
 ### Adibus Soniy
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: 16 page book that explains the core things that young learner should know
 Rating: 9.5/10
 
@@ -386,19 +386,19 @@ Rating: 8.5/10
 
 ### Antifragile
 
-Category: Non-fiction  
+Category: Non-Fiction  
 Subtitle: Reminded myself of the importance of discomfort, mistakes and failures in life. The only way to grow is to expose yourself to these things
 Rating: 8/10
 
 ### Digital Minimalism
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Great book by my favorite author  Cal Newport. I had issues related to social media, and this book helped me to lower my screen time noticeably
 Rating: 6/10
 
 ### From Influence Empire: The Story of Tencent
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Detailed look into the history ofTencent, a company that has shaped the modern Chinese economy. Quite inspiring and interesting to learn how young Pony Ma was able to build such a big empire from scratch
 Rating: 6/10
 
@@ -410,7 +410,7 @@ Rating: 4/10
 
 ### A mind for numbers
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: For those who struggle with math, I found some effective techniques to learn science in a better way
 Rating: 5/10
 
@@ -422,31 +422,31 @@ Rating: 4/10
 
 ### Universal Principles of UX
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Very practical, understandable and useful resource. Written by a professional in the field, real life examples from her own work for Google, Spotify ,etc
 Rating: 5.5/10
 
 ### Hackers and Painters
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Collection of essay by Paul Graham on various topics
 Rating: 7.5/10
 
 ### Great Mental Models
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Good book that made me to rethink my decision making process.
 Rating: 4.5/10
 
 ### And The Wind Is Coming Back
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Weird book by a anticommunist author, how he tried to stand against communism and been in jail for 4 times and 2 times in mental hospital
 Rating: 3/10
 
 ### Build
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Amazing book by amazing person  Tony Fadell, a person behind iPod, iPhone and Nest. I learnt about product design, innovation, business and leadership
 Rating: 6.5/10
 
@@ -484,37 +484,37 @@ Rating: 4/10
 
 ### Malcolm X
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Book about a person who tranformed from a criminal to an activist
 Rating: 3.5/10
 
 ### Deep Work
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: It was my 2nd attempt to read this book, and I finally finished it. Now I understand the message of the book. Showed how our focus and productivity were destroyed in this modern world and how to get it back
 Rating: 6.5/10
 
 ### How To Become A Straight A Student
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Fine book about getting good grades in college by Cal Newport
 Rating: 3.5/10
 
 ### Why Has Nobody Told Me This Before
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Wasted my time on this book
 Rating: 4/10
 
 ### Courage To Be Disliked
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Some tips on how to pursue happier life, some of them are useful, only some though
 Rating: 4/10
 
 ### Jab, Jab, Jab, Right Hook
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Good but old book about social media marketing, I mean it should have been good for its period, it was written by Gary Vaynerchuk
 Rating: 3/10
 
@@ -526,19 +526,19 @@ Rating: 6.5/10
 
 ### Contagious
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Very good and practical book about virality
 Rating: 7/10
 
 ### Benjamin Franklin
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: It was interesting to learn about the life of Benjamin Franklin. How he helped shape the modern United States by bringing together all the people
 Rating: 7/10
 
 ### The Man's Search For Meaning
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: A book written by a person who survived the World War II concentration camp. How he managed to stay alive in the moments that many wished to be dead. A book that makes you feel grateful for your life
 Rating: 6.5/10
 
@@ -550,7 +550,7 @@ Rating: 7/10
 
 ### Richest Man in Babylon
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Not that great book, seemed very basic idea to me
 Rating: 5/10
 
@@ -562,25 +562,25 @@ Rating: 6.5/10
 
 ### From Zero To One
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Good insights on how to build a successful startup
 Rating: 4/10
 
 ### Tribes of Mentors
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Didn't like it much
 Rating: 2/10
 
 ### Product Design
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Below average book about designing good products
 Rating: 5.5/10
 
 ### Everything is figureoutable
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Another bad selfhelp book
 Rating: 4/10
 
@@ -606,19 +606,19 @@ Rating: 7/10
 
 ### So Good They Can't Ignore You
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: A bit controversial book by Cal Newport. About passion and success in career
 Rating: 8/10
 
 ### Bada$$
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Good book about making and marketing good products
 Rating: 6/10
 
 ### How will you measure your life
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: I don't remember what it was about
 Rating: 3/10
 
@@ -630,7 +630,7 @@ Rating: 4/10
 
 ### Wolf of Wall Street: Straight Line
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: As in the movie, the words of Jordan Belfort sounded a bit scammish, I mean too many promises
 Rating: 5/10
 
@@ -648,61 +648,61 @@ Rating: 7.5/10
 
 ### Elon Musk
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: A bit long, but inspiring life story of Elon Musk
 Rating: 5.5/10
 
 ### Pocket Full of Do's
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Short, practical and useful suggestions gathered by Chris Do himself
 Rating: 5.5/10
 
 ### Greenlights
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: A nice self reflecting book of Matthew McConaughey. He was totally transparent about his life. The main thing that I got you have to travel. Accept the challenges.
 Rating: 5.5/10
 
 ### No Filter
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Real look into the life of Instagram founders. How they built the company and how they survived the competition
 Rating: 5.5/10
 
 ### Outliers
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Okayyish book about success, I disagreed with many ideas in that book
 Rating: 6.5/10
 
 ### 48 Laws of Power
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: I found it interesting and useful at the time of reading it, but later I realized it was all about manipulation, so I changed my mind about it
 Rating: 6/10
 
 ### Leonardo Da Vinci
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Long and detailed book about the life of my favorite artist  Leonardo Da Vinci by Walter Isaacson
 Rating: 6.5/10
 
 ### Limitless
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Waste of time
 Rating: 1/10
 
 ### 4Hour Workweek
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: To me it is a scam
 Rating: 1/10
 
 ### The Third Door
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Don't get attached to success or failure , be attached to trying and growing. It is our choices, ...far more than our abilities. We can choose
 Rating: 6/10
 
@@ -716,26 +716,26 @@ Rating: 5/10
 
 ### Power of Habit
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Overrated book about habits
 Rating: 2/10
 
 ### Think And Grow Rich
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Scam, lies and misinformation
 Rating: 1/10
 
 ### Rich dad poor dad
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Overrated book or I am dumb
 Rating: 1/10
 ## 2019
 
 ### Steve Jobs
 
-Category: Non-fiction
+Category: Non-Fiction
 Subtitle: Good book showing the life of visionary and entrepreneur Steve Jobs. But there is one sentence that offended me
 Rating: 6/10
 
