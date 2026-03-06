@@ -43,10 +43,15 @@
                     <option value={rating}>{rating}+ Stars</option>
                 {/each}
             </select>
+            <select bind:value={selectedYear} class={$currentTheme}>
+                <option value={0}>All Years</option>
+                {#each years as year}
+                    <option value={year}>{year}</option>
+                {/each}
+            </select>
            </div>
-
-            <p class="numberOfBooks">Number of books: {data.numberOfBooks}</p>
         </div>
+        <p class="numberOfBooks entrance" style="--delay: 120ms">Number of books: {filteredYearGroups.reduce((sum, yg) => sum + yg.books.length, 0)}</p>
 
         {#each filteredYearGroups as yearGroup, i}
             <div class={`bookHeader ${$currentTheme} entrance`} style="--delay: {200 + i * 120}ms">
@@ -76,17 +81,21 @@
     let currentTheme: Writable<string> = writable('light');
     let destroyScroll: (() => void) | undefined;
     
-    let categories: string[] = [...new Set(data.yearGroups.flatMap(yg => yg.books.map(b => b.category)))];
+    let categories: string[] = [...new Set(data.yearGroups.flatMap(yg => yg.books.map(b => b.category)))].sort();
+    let years: number[] = data.yearGroups.map(yg => yg.year).sort((a, b) => b - a);
     let selectedCategory = '';
     let selectedRating = 0;
+    let selectedYear = 0;
 
-    $: filteredYearGroups = data.yearGroups.map(yg => ({
-        ...yg,
-        books: yg.books.filter(book => 
-            (selectedCategory === '' || book.category === selectedCategory) &&
-            (selectedRating === 0 || book.rating >= selectedRating)
-        )
-    })).filter(yg => yg.books.length > 0);
+    $: filteredYearGroups = data.yearGroups
+        .filter(yg => selectedYear === 0 || yg.year === selectedYear)
+        .map(yg => ({
+            ...yg,
+            books: yg.books.filter(book =>
+                (selectedCategory === '' || book.category === selectedCategory) &&
+                (selectedRating === 0 || book.rating >= selectedRating)
+            )
+        })).filter(yg => yg.books.length > 0);
 
     theme.subscribe((value) => {
         currentTheme.set(value);

@@ -19,7 +19,7 @@ Rating: 6/10
 
 
 ### The Hobbit
-Category: Ficion
+Category: Fiction
 Subtitle: Child tales, didn't find it interesting at all
 Rating: 5/10
 
@@ -61,7 +61,7 @@ Subtitle: Fitrat's view about broken education system and how to fix it
 Rating: 8/10
 
 ### Al Pacino: Sonny Boy
-Category: Memoir
+Category: Biography
 Subtitle: An amazing autobiography by Al Pacino, it is always interesting to hear the story of these type of people
 Rating: 6.5/10
 
@@ -113,22 +113,22 @@ Subtitle: More of routing suggested by Rick Rubin for creative state
 Rating: 6/10
 
 ### Surely You're Joking Mr.Feynman
-Category: Memoir
+Category: Biography
 Subtitle: Adventures of genius man, very inspiring and funny
 Rating: 7/10
 
-### Unreasonable Hospitality
-Category: Hospitality
+### Unreasonable Non-Fiction
+Category: Non-Fiction
 Subtitle: Hands on insights on how any business can use hospitality to deliver more than expected
 Rating: 6.5/10
 
 ### Down and Out in Paris and London
-Category: Memoir
+Category: Biography
 Subtitle: Orwell's life in poverty, makes you think about minimum wage jobs
 Rating: 6.5/10
 
 ### Resilience by HBR
-Category: Leadership
+Category: Non-Fiction
 Subtitle: Mediocre book or collection of article
 Rating: 4/10
 
@@ -201,7 +201,7 @@ Rating: 7.5/10
 ### Source Code by Bill Gates
 
 Category: Biography
-Subtitle: Memoir book of Bill Gates, focused primarily his journey till Microsoft
+Subtitle: Biography book of Bill Gates, focused primarily his journey till Microsoft
 Rating: 6.5/10
 
 ### Nudge
@@ -253,6 +253,12 @@ Rating: 7.5/10
 Category: Fiction
 Subtitle: Story about a person dying, the last moment thoughts and regrets
 Rating: 6/10
+
+### Calculus Made Easy
+
+Category: Math
+Subtitle: The best book written about Calculus
+Rating: 7.5/10
 
 
 ### Don Quixote
@@ -312,7 +318,7 @@ Rating: 7.5/10
 
 ### The Elements of Computing Systems: Building Modern Computer from First Principles
 
-Category: Programming
+Category: Computer Science
 Subtitle: Helped me to see overall picture of whole computer, need to read it some time later
 Rating: 6.5/10
 
@@ -342,7 +348,7 @@ Rating: 8/10
 
 ### Operating Systems: Three Easy Pieces
 
-Category: Programming
+Category: Computer Science
 Subtitle: Nice book about OS, helped me to understand what is happening under the hood of my computer
 Rating: 7/10
 
@@ -404,7 +410,7 @@ Rating: 6/10
 
 ### Art of Computer Science
 
-Category: Programming
+Category: Computer Science
 Subtitle: It looked a bit overrated for me, the information is good, but I found it hard to consume it because of the way it was presented, too much formality and jargon
 Rating: 4/10
 
@@ -636,7 +642,7 @@ Rating: 5/10
 
 ### The Passionate Programmer
 
-Category: Programming
+Category: Computer Science
 Subtitle: A nice story of selftaught programmer who became a successful software developer
 Rating: 6.5/10
 
