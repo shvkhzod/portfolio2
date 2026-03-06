@@ -20,8 +20,8 @@
       <a href="/projects">
         <p>Works</p>
       </a>
-      <a href="/photography">
-        <p>Lens</p>
+      <a href="/books">
+        <p>Books</p>
       </a>
       <a href="/thoughts">
         <p>Thoughts</p>

@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+    import { fly } from 'svelte/transition';
     import type { PageData } from './$types';
     import { theme } from "../../../utils/theme";
     import type { Post } from '$lib/types';
@@ -9,7 +10,10 @@
 
     $: currentTheme = $theme;
     $: post = data.post as Post;
-$: content = browser ? post.content : '';
+    $: content = browser ? post.content : '';
+
+    let visible = false;
+    onMount(() => { visible = true; });
 </script>
 
 <svelte:head>
@@ -44,15 +48,11 @@ $: content = browser ? post.content : '';
 </svelte:head>
 <div class={`blogContainer ${currentTheme}`}>
     <div class={`blogWrapper ${currentTheme}`}>
-        {#if post}
-            <h1 class={`title ${currentTheme}`}>{post.title}</h1>
-            <p class={`date ${currentTheme}`}>{post.date}</p>
-            <div class="blogContent">
-                {#if browser}
-                    {@html content}
-                {:else}
-                    <p>Loading...</p>
-                {/if}
+        {#if visible}
+            <h1 class={`title ${currentTheme}`} in:fly={{ y: 80, duration: 600, delay: 0 }}>{post.title}</h1>
+            <p class={`date ${currentTheme}`} in:fly={{ y: 80, duration: 600, delay: 100 }}>{post.date}</p>
+            <div class="blogContent" in:fly={{ y: 80, duration: 600, delay: 200 }}>
+                {@html content}
             </div>
         {/if}
     </div>

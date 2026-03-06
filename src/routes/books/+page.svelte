@@ -27,9 +27,9 @@
 
 <div class={`bookContainer ${$currentTheme}`}> 
     <div class={`bookWrapper ${$currentTheme}`}>
-        <h1 class={`title ${$currentTheme}`}>{data.title}</h1>
-        
-        <div class={`filters ${$currentTheme}`}>
+        <h1 class={`title ${$currentTheme} entrance`} style="--delay: 0ms">{data.title}</h1>
+
+        <div class={`filters ${$currentTheme} entrance`} style="--delay: 100ms">
            <div class="selections">
             <select bind:value={selectedCategory} class={$currentTheme}>
                 <option value="">All Categories</option>
@@ -48,13 +48,13 @@
             <p class="numberOfBooks">Number of books: {data.numberOfBooks}</p>
         </div>
 
-        {#each filteredYearGroups as yearGroup}
-            <div class={`bookHeader ${$currentTheme}`}>
+        {#each filteredYearGroups as yearGroup, i}
+            <div class={`bookHeader ${$currentTheme} entrance`} style="--delay: {200 + i * 120}ms">
                 <h2>{yearGroup.year}</h2>
                 <div class={`line ${$currentTheme}`}></div>
             </div>
-            {#each yearGroup.books as book}
-                <div class={`book ${$currentTheme}`}>
+            {#each yearGroup.books as book, j}
+                <div class={`book ${$currentTheme} entrance`} style="--delay: {250 + i * 120 + (j + 1) * 60}ms">
                     <h3>{book.title}</h3>
                     <p>{book.subtitle}</p>
                     <p>Category: {book.category}</p>
@@ -109,6 +109,22 @@
 </script>
 
 <style>
+    @keyframes enterUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .entrance {
+        opacity: 0;
+        animation: enterUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation-delay: var(--delay, 0ms);
+    }
 
 :global(html) {
         scroll-behavior: auto !important;
@@ -127,7 +143,7 @@
       display: flex;
       flex-direction: column;
       width: 650px;
-      padding: 24px 64px 120px 64px;
+      padding: 60px 64px 120px 64px;
       transition: 0.4s ease-in-out;
     }
 
@@ -223,7 +239,7 @@
       display: flex;
       flex-direction: column;
       width: 650px;
-      padding: 24px 64px 120px 64px;
+      padding: 60px 64px 120px 64px;
       transition: 0.4s ease-in-out;
     }
   
@@ -296,6 +312,7 @@
     .filters {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-top: 20px;
         margin-bottom: 20px;
     }

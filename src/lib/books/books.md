@@ -2,6 +2,27 @@
 
 ## 2026
 
+### Siddhartha
+Category: Fiction
+Subtitle: Interesting tale about a person who seeks for wisdom and finds it
+Rating: 6/10
+
+### Five Point Someone
+Category: Fiction
+Subtitle: Very fun and realistic college life story
+Rating: 7.5/10
+
+### The Inner Life Of An Artist
+Category: Art
+Subtitle: Not so great essays about being an artist
+Rating: 6/10
+
+
+### The Hobbit
+Category: Ficion
+Subtitle: Child tales, didn't find it interesting at all
+Rating: 5/10
+
 ### How Fiction Works 
 Category: Writing
 Subtitle: A bit vague analysis of literature to study novels

@@ -44,7 +44,7 @@
 
 <div class={`blogsWrap ${$currentTheme}`}>
     <div class={`blogsContainer ${$currentTheme}`}>
-        <div class={`filters ${$currentTheme}`}>
+        <div class={`filters ${$currentTheme} entrance`} style="--delay: 0ms">
             <select bind:value={selectedCategory} class={$currentTheme}>
                 <option value="">All Categories</option>
                 {#each data.categories as category}
@@ -53,8 +53,8 @@
             </select>
         </div>
         <div class={`blogList ${$currentTheme}`}>
-            {#each filteredPosts as post}
-                <a href={`/thoughts/${post.slug}`}>
+            {#each filteredPosts as post, i}
+                <a href={`/thoughts/${post.slug}`} class="entrance" style="--delay: {60 + i * 50}ms">
                     <BlogItem blogTitle={post.title} date={formatDate(post.date)} />
                 </a>
             {/each}
@@ -63,6 +63,25 @@
 </div>
 
 <style>
+    @keyframes enterUp {
+        from {
+            opacity: 0;
+            transform: translateY(16px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .entrance {
+        opacity: 0;
+        animation: enterUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation-delay: var(--delay, 0ms);
+        will-change: transform, opacity;
+        backface-visibility: hidden;
+    }
+
     .dark.blogsWrap {
         width: 100%;
         display: flex;
