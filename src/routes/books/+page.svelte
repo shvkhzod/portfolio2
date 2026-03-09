@@ -25,41 +25,41 @@
 </svelte:head>
 
 
-<div class={`bookContainer ${$currentTheme}`}> 
-    <div class={`bookWrapper ${$currentTheme}`}>
-        <h1 class={`title ${$currentTheme} entrance`} style="--delay: 0ms">{data.title}</h1>
+<div class="bookContainer" class:dark={$currentTheme === 'dark'} class:light={$currentTheme === 'light'}>
+    <div class="bookWrapper">
+        <h1 class="title entrance" style="--delay: 0ms">{data.title}</h1>
 
-        <div class={`filters ${$currentTheme} entrance`} style="--delay: 100ms">
-           <div class="selections">
-            <select bind:value={selectedCategory} class={$currentTheme}>
-                <option value="">All Categories</option>
-                {#each categories as category}
-                    <option value={category}>{category}</option>
-                {/each}
-            </select>
-            <select bind:value={selectedRating} class={$currentTheme}>
-                <option value={0}>All Ratings</option>
-                {#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as rating}
-                    <option value={rating}>{rating}+ Stars</option>
-                {/each}
-            </select>
-            <select bind:value={selectedYear} class={$currentTheme}>
-                <option value={0}>All Years</option>
-                {#each years as year}
-                    <option value={year}>{year}</option>
-                {/each}
-            </select>
-           </div>
+        <div class="filters entrance" style="--delay: 120ms">
+            <div class="selections">
+                <select bind:value={selectedCategory} class={$currentTheme}>
+                    <option value="">All Categories</option>
+                    {#each categories as category}
+                        <option value={category}>{category}</option>
+                    {/each}
+                </select>
+                <select bind:value={selectedRating} class={$currentTheme}>
+                    <option value={0}>All Ratings</option>
+                    {#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as rating}
+                        <option value={rating}>{rating}+ Stars</option>
+                    {/each}
+                </select>
+                <select bind:value={selectedYear} class={$currentTheme}>
+                    <option value={0}>All Years</option>
+                    {#each years as year}
+                        <option value={year}>{year}</option>
+                    {/each}
+                </select>
+            </div>
         </div>
-        <p class="numberOfBooks entrance" style="--delay: 120ms">Number of books: {filteredYearGroups.reduce((sum, yg) => sum + yg.books.length, 0)}</p>
+        <p class="numberOfBooks entrance" style="--delay: 240ms">Number of books: {filteredYearGroups.reduce((sum, yg) => sum + yg.books.length, 0)}</p>
 
         {#each filteredYearGroups as yearGroup, i}
-            <div class={`bookHeader ${$currentTheme} entrance`} style="--delay: {200 + i * 120}ms">
+            <div class="bookHeader entrance" style="--delay: {360 + i * 200}ms">
                 <h2>{yearGroup.year}</h2>
-                <div class={`line ${$currentTheme}`}></div>
+                <div class="line"></div>
             </div>
             {#each yearGroup.books as book, j}
-                <div class={`book ${$currentTheme} entrance`} style="--delay: {250 + i * 120 + (j + 1) * 60}ms">
+                <div class="book entrance" style="--delay: {420 + i * 200 + (j + 1) * 80}ms">
                     <h3>{book.title}</h3>
                     <p>{book.subtitle}</p>
                     <p>Category: {book.category}</p>
@@ -69,7 +69,6 @@
         {/each}
     </div>
 </div>
-{console.log(selectedCategory, selectedRating, filteredYearGroups)}
 <script lang="ts">
     import { theme } from '../../utils/theme';
     import { writable, type Writable } from 'svelte/store';
@@ -118,254 +117,164 @@
 </script>
 
 <style>
-    @keyframes enterUp {
-        from {
+    @keyframes entrance {
+        0% {
             opacity: 0;
-            transform: translateY(30px);
+            filter: blur(4px);
+            transform: translateY(40px) scale(0.98);
         }
-        to {
+        60% {
+            filter: blur(0px);
+        }
+        100% {
             opacity: 1;
-            transform: translateY(0);
+            filter: blur(0px);
+            transform: translateY(0) scale(1);
         }
     }
 
     .entrance {
         opacity: 0;
-        animation: enterUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation: entrance 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
         animation-delay: var(--delay, 0ms);
     }
 
-:global(html) {
+    :global(html) {
         scroll-behavior: auto !important;
     }
-    .dark.bookContainer {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      min-height: 100vh;
-      background-color: black;
-      transition: 0.4s ease-in-out;
-    }
-  
-    .dark.bookWrapper {
-      display: flex;
-      flex-direction: column;
-      width: 650px;
-      padding: 60px 64px 120px 64px;
-      transition: 0.4s ease-in-out;
+
+    .bookContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: var(--bg-color);
+        transition: background-color 0.4s ease-in-out;
     }
 
-    .dark.filters {
+    .bookWrapper {
         display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 650px;
+        padding: 60px 64px 120px 64px;
+        transition: color 0.4s ease-in-out;
+    }
+
+    .title {
+        color: var(--text-color);
+        font-size: 20px;
+        transition: color 0.4s ease-in-out;
+    }
+
+    h2 {
+        color: var(--text-color);
+        font-size: 16px;
+        transition: color 0.4s ease-in-out;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+        transition: color 0.4s ease-in-out;
+    }
+
+    .bookHeader {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .dark.filters .selections {
-        display: flex;
+        align-items: center;
         gap: 20px;
-    }
-   
-  
-    .dark .title {
-        color: white;
-        font-size: 20px;
-        transition: 0.4s ease-in-out;   
-    } 
-
-    .dark h2 {
-        color: white;
-        font-size: 16px;
-        transition: 0.4s ease-in-out;
-    }
-    .dark a {
-      text-decoration: none;
-      transition: 0.4s ease-in-out;
+        transition: color 0.4s ease-in-out;
     }
 
-    .dark.line {
-        width: 86%;
+    .line {
+        flex: 1;
         height: 1px;
-        background-color: black;
+        background-color: var(--text-color);
+        opacity: 0.3;
     }
 
-    .dark .book h3 {
-        color: white;
-        font-weight: 600;
-        font-size: 16px;
-        transition: 0.4s ease-in-out;
-    }
-
-    .dark .book p {
-        color: white;
-        font-size: 14px;
-        opacity: 0.7;
-        transition: 0.4s ease-in-out;
-    }
-
-    .dark .book {
+    .book {
         margin-top: 36px;
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
 
-    
-
-    .dark.bookHeader {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.4s ease-in-out;
-    }
-
-    .dark .line {
-        width: 86%;
-        height: 1px;
-        background-color: rgba(255, 255, 255, 0.553);
-    }
-
-
-  
-    /* Light */
-  
-    .light.bookContainer {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      min-height: 100vh;
-      background-color: white;
-      transition: 0.4s ease-in-out;
-    }
-    
-
-    .light.bookWrapper {
-      display: flex;
-      flex-direction: column;
-      width: 650px;
-      padding: 60px 64px 120px 64px;
-      transition: 0.4s ease-in-out;
-    }
-  
-    .light.book {
-        margin-top: 36px;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-
-        
-    }
-
-    .light.line {
-        width: 86%;
-        height: 1px;
-        background-color: black;
-    }
-
-    .light.bookHeader {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.4s ease-in-out;
-    }
-
-    .light .book h3 {
-        color: black;
+    .book h3 {
+        color: var(--text-color);
         font-weight: 600;
         font-size: 16px;
-        transition: 0.4s ease-in-out;
+        transition: color 0.4s ease-in-out;
     }
 
-    .light .book p {
-        color: black;
+    .book p {
+        color: var(--text-color);
         font-size: 14px;
         opacity: 0.7;
-        transition: 0.4s ease-in-out;
+        transition: color 0.4s ease-in-out;
     }
 
-    .light.title {
-        color: black;
-        font-size: 20px;
-        transition: 0.4s ease-in-out;
-    }
-
-    .light h2 {
-        color: black;
-        font-size: 16px;
-        transition: 0.4s ease-in-out;
-    }
-    .light a {
-      text-decoration: none;
-      transition: 0.4s ease-in-out;
-    }
-
-    .light .numberOfBooks {
-        color: black;
+    .numberOfBooks {
+        color: var(--text-color);
+        font-size: 14px;
         opacity: 0.7;
-        transition: 0.4s ease-in-out;
-    }
-
-    .dark .numberOfBooks {
-        color: white;
-        opacity: 0.7;
-        transition: 0.4s ease-in-out;
+        transition: color 0.4s ease-in-out;
     }
 
     .filters {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    .filters .selections {
+    .selections {
         display: flex;
-        gap: 20px;
+        flex-wrap: wrap;
+        gap: 12px;
     }
 
     select {
-        padding: 4px 8px;
+        padding: 6px 10px;
         border-radius: 6px;
         font-size: 14px;
         font-weight: 550;
-        transition: 0.4s ease-in-out;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
     }
 
     .dark select {
         color: black;
         background-color: white;
-        border: none;
     }
 
     .light select {
         color: white;
         background-color: black;
-        border: none;
     }
 
-    @media (max-width: 568px) {
+    @media (max-width: 768px) {
+        .bookWrapper {
+            padding: 40px 24px 80px 24px;
+        }
+
         .selections {
-            height: 52px;
+            gap: 8px;
         }
 
-        .filters {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+        select {
+            font-size: 13px;
+            padding: 6px 8px;
         }
 
-        .dark.bookHeader {
-            gap: 20px;
+        .bookHeader {
+            gap: 12px;
         }
     }
-
-  </style>
+</style>
 

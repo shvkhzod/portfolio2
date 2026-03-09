@@ -213,8 +213,8 @@
 	<meta name="robots" content="index, follow" />
 </svelte:head>
 
-<div class={`mainContainer ${$currentTheme}`}>
-	<div class={`mainWrapper ${$currentTheme}`}>
+<div class="mainContainer" class:dark={$currentTheme === 'dark'} class:light={$currentTheme === 'light'}>
+	<div class="mainWrapper">
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
 		<div
 			class="profile entrance"
@@ -234,7 +234,7 @@
 			</div>
 		</div>
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
-		<p class="subtitle entrance" style="--delay: 60ms">
+		<p class="subtitle entrance" style="--delay: 120ms">
 			Hello, I like to build cool stuff, take pictures,
 			and read books when I'm not coding. I would love to call myself an <span
 				class="bio-word artist-word"
@@ -257,9 +257,9 @@
 				on:mouseleave={() => { artHovered = false; }}
 			><span style="--c: {artColors[0]}">a</span><span style="--c: {artColors[1]}">r</span><span style="--c: {artColors[2]}">t</span></span>.
 		</p>
-		<p class="subtitle2 entrance" style="--delay: 100ms">If you have any questions or just want to say hi, feel free to email me. See you around</p>
+		<p class="subtitle2 entrance" style="--delay: 240ms">If you have any questions or just want to say hi, feel free to email me. See you around</p>
 
-		<div class={`links ${$currentTheme} entrance`} style="--delay: 140ms">
+		<div class="links entrance" style="--delay: 360ms">
 			<a href="https://github.com/shvkhzod">
 				Github
 			</a>
@@ -271,12 +271,12 @@
 			</a>
 		</div>
 
-		<div class={`newSectionHeader ${$currentTheme} entrance`} style="--delay: 200ms">
-			<h2 class={`headerSec ${$currentTheme}`}>Projects</h2>
-			<a href="projects" class={`seeAll ${$currentTheme}`}>See All</a>
+		<div class="newSectionHeader entrance" style="--delay: 500ms">
+			<h2 class="headerSec">Projects</h2>
+			<a href="projects" class="seeAll">See All</a>
 		</div>
 
-		<div class={`${$currentTheme} prolist entrance`} style="--delay: 260ms">
+		<div class="prolist entrance" style="--delay: 620ms">
 			{#if projects}
 				{#each projects.slice(0, 3) as project}
 					<a href={`projects/${project.url}`}>
@@ -290,13 +290,13 @@
 			{/if}
 		</div>
 
-		<div class={`newSectionHeader ${$currentTheme} entrance`} style="--delay: 340ms">
-			<h2 class={`headerSec ${$currentTheme}`}>Books</h2>
-			<a href="books" class={`seeAll ${$currentTheme}`}>See All</a>
+		<div class="newSectionHeader entrance" style="--delay: 760ms">
+			<h2 class="headerSec">Books</h2>
+			<a href="books" class="seeAll">See All</a>
 		</div>
 
-		<div class={`list ${$currentTheme} entrance`} style="--delay: 400ms">
-			<div class={`list ${currentTheme}`}>
+		<div class="list entrance" style="--delay: 880ms">
+			<div class="list">
 				{#each books as book}
 					<a href={`/books`}>
 						<TinyView title={book.title} subtitle={book.subtitle} />
@@ -305,12 +305,12 @@
 			</div>
 		</div>
 
-		<div class={`newSectionHeader ${$currentTheme} entrance`} style="--delay: 460ms">
-			<h2 class={`headerSec ${$currentTheme}`}>Thoughts</h2>
-			<a href="thoughts" class={`seeAll ${$currentTheme}`}>See All</a>
+		<div class="newSectionHeader entrance" style="--delay: 1020ms">
+			<h2 class="headerSec">Thoughts</h2>
+			<a href="thoughts" class="seeAll">See All</a>
 		</div>
 
-		<div class={`list ${$currentTheme} entrance`} style="--delay: 520ms">
+		<div class="list entrance" style="--delay: 1140ms">
 			{#if blogs}
 				{#each blogs.slice(0, 3) as blog}
 					<a href={`thoughts/${blog.slug}`}>
@@ -336,23 +336,26 @@
 
 <style>
 	/* --- Entrance animation --- */
-	@keyframes enterUp {
-		from {
+	@keyframes entrance {
+		0% {
 			opacity: 0;
-			transform: translateY(16px);
+			filter: blur(4px);
+			transform: translateY(40px) scale(0.98);
 		}
-		to {
+		60% {
+			filter: blur(0px);
+		}
+		100% {
 			opacity: 1;
-			transform: translateY(0);
+			filter: blur(0px);
+			transform: translateY(0) scale(1);
 		}
 	}
 
 	.entrance {
 		opacity: 0;
-		animation: enterUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+		animation: entrance 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 		animation-delay: var(--delay, 0ms);
-		will-change: transform, opacity;
-		backface-visibility: hidden;
 	}
 
 	/* --- Bio word interactions --- */
@@ -479,642 +482,195 @@
 		line-height: 1.4em;
 	}
 
-	/*Desktop and laptop */
-	@media (min-width: 768px) {
-		.mainContainer {
-			width: 100%;
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.dark.mainContainer {
-			background-color: black;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light.mainContainer {
-			background-color: white;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .mainWrapper {
-			margin-top: 60px;
-			display: flex;
-			flex-direction: column;
-			width: 650px;
-			padding: 0px 64px;
-			justify-content: center;
-			background-color: black;
-			transition: 0.4s ease-in-out;
-			padding-bottom: 60px;
-		}
-
-		.dark .profile {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			gap:20px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .fullName {
-			font-size: 14px;
-			font-weight: 600;
-			color: #ededed;
-			transition: 0.4s ease-in-out;
-		
-		}
-
-		.dark .job {
-			margin-top: 2px;
-			font-size: 14px;
-			color: rgb(168, 168, 168);
-			font-weight: 400;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark h1 {
-			margin-top: 12px;
-			font-size: 24px;
-			line-height: 104%;
-			font-weight: 550;
-			color: white;
-			text-align: left;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .subtitle {
-			margin-top: 40px;
-			text-align: left;
-			color: #ededed;
-			font-weight: 400;
-			line-height: 21px;
-			font-size: 14px;
-			letter-spacing: -0.2px;
-			transition: 0.4s ease-in-out;
-		}
-		.dark .subtitle2 {
-			margin-top: 20px;
-			text-align: left;
-			color: #ededed;
-			line-height: 21px;
-			font-size: 14px;
-			font-weight: 400;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .links a {
-			color: #ededed;
-			text-decoration: underline;
-			text-underline-offset: 4px;
-			font-size: 14px;
-			transition: 0.1s ease-in-out;
-		}
-
-		.dark .links a:hover {
-			color: white;
-			opacity: 100%;
-			text-decoration: underline;
-			font-size: 14px;
-			transition: ease-in-out;
-		}
-		.dark .ava {
-			width: 32px;
-			height: 32px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .links {
-			margin-top: 20px;
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			gap: 20px;
-			width: 100%;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .newSectionHeader {
-			width: 100%;
-			margin-top: 56px;
-			margin-bottom: 24px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .headerSec {
-			color: black;
-			background-color: white;
-			font-weight: 600;
-			font-size: 14px;
-			padding: 4px 12px;
-			border-radius: 6px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .seeAll {
-			color: white;
-			font-size: 14px;
-			transition: 0.4s ease-in-out;
-			text-decoration: none;
-		}
-
-		.dark .list {
-			display: flex;
-			flex-direction: column;
-			transition: 0.4s ease-in-out;
-			gap: 24px;
-		}
-
-		a {
-			text-decoration: none;
-		}
-
-		.light .mainWrapper {
-			margin-top: 60px;
-			display: flex;
-			flex-direction: column;
-			width: 650px;
-			padding: 0px 64px;
-			justify-content: center;
-			background-color: white;
-			transition: 0.4s ease-in-out;
-			padding-bottom: 60px;
-		}
-
-		.light .profile {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			gap:20px;
-			
-		}
-
-		.light .fullName {
-			font-size: 14px;
-			font-weight: 600;
-			color: black;
-			transition: 0.4s ease-in-out;
-		
-		}
-
-		.light .job {
-			margin-top: 2px;
-			font-size: 14px;
-			font-weight: 400;
-			color: #626161;
-			transition: 0.4s ease-in-out;
-		}
-
-
-		.light h1 {
-			margin-top: 12px;
-			font-size: 24px;
-			line-height: 104%;
-			font-weight: 550;
-			color: black;
-			text-align: left;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .subtitle {
-			margin-top: 40px;
-			text-align: left;
-			color: #626161;
-			font-weight: 400;
-			line-height: 21px;
-			font-size: 14px;
-			letter-spacing: -0.2px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .links a {
-			color: #626161;
-			text-decoration: underline;
-			text-underline-offset: 4px;
-			font-size: 14px;
-			transition: 0.1s ease-in-out;
-		}
-
-		.light .links a:hover {
-			color: black;
-			opacity: 100%;
-			text-decoration: underline;
-			text-underline-offset: 4px;
-			font-size: 14px;
-			transition: ease-in-out;
-		}
-
-		.light .subtitle2 {
-			margin-top: 20px;
-			line-height: 21px;
-			text-align: left;
-			font-weight: 400;
-			color: #626161;
-			font-size: 14px;
-			transition: 0.4s ease-in-out;
-		}
-		.light .ava {
-			width: 32px;
-			height: 32px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .links {
-			margin-top: 20px;
-			display: flex;
-			flex-direction: row;
-			transition: 0.4s ease-in-out;
-			gap: 20px;
-			align-items: center;
-			width: 100%;
-		}
-
-		.light .newSectionHeader {
-			width: 100%;
-			margin-top: 56px;
-			margin-bottom: 24px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .headerSec {
-			color: white;
-			background-color: black;
-			font-weight: 600;
-			font-size: 14px;
-			padding: 4px 12px;
-			border-radius: 6px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .seeAll {
-			color: black;
-			font-size: 14px;
-			transition: 0.4s ease-in-out;
-			text-decoration: none;
-		}
-
-		.light .list {
-			display: flex;
-			flex-direction: column;
-			gap: 24px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .prolist {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			gap: 20px;
-			flex-wrap: wrap;
-		}
-
-		.dark .prolist {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			gap: 20px;
-			flex-wrap: wrap;
-			
-		}
-
-		.dark .prolist a {
-			color:white;
-			
-		}
-		.light .prolist a {
-			color:black;
-			
-		}
-
-		
+	/* --- Layout --- */
+	.mainContainer {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		background-color: var(--bg-color);
+		transition: background-color 0.4s ease-in-out;
 	}
 
-	/*Mobile */
+	.mainWrapper {
+		margin-top: 60px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 650px;
+		padding: 0 64px 60px;
+		background-color: var(--bg-color);
+		transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	}
 
+	/* --- Profile --- */
+	.profile {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 20px;
+		cursor: default;
+		width: fit-content;
+	}
+
+	.ava {
+		width: 32px;
+		height: 32px;
+		transition: 0.4s ease-in-out;
+	}
+
+	.fullName {
+		font-size: 14px;
+		font-weight: 600;
+		color: var(--text-color);
+		transition: color 0.4s ease-in-out;
+	}
+
+	.job {
+		margin-top: 2px;
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--text-color);
+		opacity: 0.6;
+		transition: color 0.4s ease-in-out;
+	}
+
+	/* --- Text --- */
+	h1 {
+		margin-top: 12px;
+		font-size: 24px;
+		line-height: 104%;
+		font-weight: 550;
+		color: var(--text-color);
+		text-align: left;
+		transition: color 0.4s ease-in-out;
+	}
+
+	.subtitle {
+		margin-top: 40px;
+		text-align: left;
+		color: gray;
+		font-weight: 400;
+		line-height: 21px;
+		font-size: 14px;
+		letter-spacing: -0.2px;
+		transition: color 0.4s ease-in-out;
+	}
+
+	.subtitle2 {
+		margin-top: 20px;
+		text-align: left;
+		color: gray;
+		line-height: 21px;
+		font-size: 14px;
+		font-weight: 400;
+		transition: color 0.4s ease-in-out;
+	}
+
+	/* --- Links --- */
+	a {
+		text-decoration: none;
+		color: var(--text-color);
+		transition: color 0.4s ease-in-out;
+	}
+
+	.links {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 20px;
+		width: 100%;
+	}
+
+	.links a {
+		color: var(--text-color);
+		opacity: 0.7;
+		text-decoration: underline;
+		text-underline-offset: 4px;
+		font-size: 14px;
+		transition: opacity 0.1s ease-in-out;
+	}
+
+	.links a:hover {
+		opacity: 1;
+	}
+
+	/* --- Section headers --- */
+	.newSectionHeader {
+		width: 100%;
+		margin-top: 56px;
+		margin-bottom: 24px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.headerSec {
+		font-weight: 600;
+		font-size: 14px;
+		padding: 4px 12px;
+		border-radius: 6px;
+		transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	}
+
+	.dark .headerSec {
+		color: black;
+		background-color: white;
+	}
+
+	.light .headerSec {
+		color: white;
+		background-color: black;
+	}
+
+	.seeAll {
+		color: var(--text-color);
+		font-size: 14px;
+		text-decoration: none;
+		transition: color 0.4s ease-in-out;
+	}
+
+	/* --- Lists --- */
+	.list {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.prolist {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	.prolist a {
+		color: var(--text-color);
+	}
+
+	/* --- Mobile --- */
 	@media (max-width: 768px) {
-		a {
-			text-decoration: none;
-			font-weight: 500;
-		}
-		.mainContainer {
-			width: 100%;
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
+		.mainWrapper {
+			padding: 0 24px 60px;
 		}
 
-		.dark.mainContainer {
-			background-color: black;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light.mainContainer {
-			background-color: white;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .mainWrapper {
-			margin-top: 60px;
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-			padding: 24px;
-			justify-content: center;
-			background-color: black;
-			transition: 0.4s ease-in-out;
-			padding-bottom: 60px;
-		}
-
-		.dark h1 {
-			margin-top: 12px;
-			font-size: 24px;
-			line-height: 104%;
-			font-weight: 550;
-			color: white;
-			text-align: left;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .subtitle {
+		.subtitle {
 			margin-top: 32px;
-			text-align: left;
-			color: white;
-			font-weight: 500;
-			letter-spacing: -0.2px;
 			line-height: 24px;
-			opacity: 100%;
-			transition: 0.4s ease-in-out;
 		}
 
-		
-		.dark .links a {
-			color: white;
-			opacity: 50%;
-			text-decoration: underline;
-			text-underline-offset: 4px;
-			font-size: 14px;
-			transition: 0.1s ease-in-out;
-		}
-
-		.dark .links a:hover {
-			color: white;
-			opacity: 100%;
-			text-decoration: underline;
-			font-size: 14px;
-			transition: ease-in-out;
-		}
-
-		.dark .subtitle2 {
-			margin-top: 20px;
-			text-align: left;
-			color: white;
-			font-weight: 500;
-			letter-spacing: -0.6px;
+		.subtitle2 {
 			line-height: 24px;
-			opacity: 100%;
-			transition: 0.4s ease-in-out;
 		}
 
-		.dark .profile {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			gap:20px;
-			transition: 0.4s ease-in-out;
+		.prolist {
+			flex-direction: column;
 		}
 
-		.dark .fullName {
-			font-size: 14px;
-			font-weight: 600;
-			color: white;
-			transition: 0.4s ease-in-out;
-		
-		}
-
-		.dark .job {
-			margin-top: 4px;
-			font-size: 14px;
-			color: white;
-			font-weight: 400;
-			opacity: 50%;
-			transition: 0.4s ease-in-out;
-		}
-		.dark .ava {
-			width: 32px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .links {
-			margin-top: 20px;
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			gap: 20px;
-			width: 100%;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .newSectionHeader {
-			width: 100%;
-			margin-top: 56px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .headerSec {
-			color: black;
-			background-color: white;
-			font-weight: 550;
-			font-size: 14px;
+		.headerSec {
 			padding: 4px 8px;
-			border-radius: 6px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.dark .seeAll {
-			color: white;
-			font-size: 14px;
-			transition: 0.4s ease-in-out;
-			text-decoration: none;
-		}
-
-		.dark .list {
-			margin-top: 24px;
-			display: flex;
-			flex-direction: column;
-			transition: 0.4s ease-in-out;
-			gap: 24px;
-		}
-
-
-		.dark .prolist {
-			display: flex;
-			flex-direction: column;
-			gap: 20px;
-			flex-wrap: wrap;
-			
-		}
-
-		.dark .prolist a {
-			color:white;
-			
-		}
-		.light .mainWrapper {
-			margin-top: 60px;
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-			padding: 24px;
-			justify-content: center;
-			background-color: white;
-			transition: 0.4s ease-in-out;
-			padding-bottom: 60px;
-		}
-
-		.light h1 {
-			margin-top: 12px;
-			font-size: 24px;
-			line-height: 104%;
-			font-weight: 550;
-			color: black;
-			text-align: left;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .profile {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			gap:20px;
-			
-		}
-
-		.light .fullName {
-			font-size: 14px;
-			font-weight: 600;
-			color: black;
-			transition: 0.4s ease-in-out;
-		
-		}
-
-		.light .job {
-			margin-top: 4px;
-			font-size: 14px;
-			font-weight: 400;
-			opacity: 50%;
-			color: black;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .subtitle {
-			margin-top: 32px;
-			text-align: left;
-			font-weight: 500;
-			line-height: 24px;
-			letter-spacing: -0.2px;
-			color: black;
-			opacity: 50%;
-			transition: 0.4s ease-in-out;
-		}
-		.light .subtitle2 {
-			line-height: 24px;
-			margin-top: 20px;
-			text-align: left;
-			font-weight: 500;
-			letter-spacing: -0.6px;
-			color: black;
-			opacity: 50%;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .links a {
-			color: black;
-			font-weight: 600;
-			opacity: 50%;
-			text-decoration: underline;
-			text-underline-offset: 4px;
-			font-size: 14px;
-			transition: 0.1s ease-in-out;
-		}
-
-		.light .links a:hover {
-			color: black;
-			opacity: 100%;
-			text-decoration: underline;
-			text-underline-offset: 4px;
-			font-size: 14px;
-			transition: ease-in-out;
-		}
-		.light .ava {
-			width: 32px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .links {
-			margin-top: 20px;
-			display: flex;
-			flex-direction: row;
-			transition: 0.4s ease-in-out;
-			gap: 20px;
-			align-items: center;
-			width: 100%;
-		}
-
-		.light .newSectionHeader {
-			width: 100%;
-			margin-top: 56px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .headerSec {
-			color: white;
-			background-color: black;
-			font-weight: 550;
-			font-size: 14px;
-			padding: 4px 8px;
-			border-radius: 6px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .seeAll {
-			color: black;
-			font-size: 14px;
-			transition: 0.4s ease-in-out;
-			text-decoration: none;
-		}
-
-		.light .list {
-			margin-top: 24px;
-			display: flex;
-			flex-direction: column;
-			gap: 24px;
-			transition: 0.4s ease-in-out;
-		}
-
-		.light .prolist a {
-			color: #000000;
-		}
-
-		.dark .prolist a {
-			color: #ffffff;
 		}
 	}
 </style>

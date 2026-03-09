@@ -2,7 +2,14 @@
   "permissions": {
     "allow": [
       "Bash(rm:*)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(node:*)",
+      "Bash(npx svelte-check:*)",
+      "Bash(npx vite:*)",
+      "Bash(npm install:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(npm uninstall:*)"
     ],
     "deny": [],
     "ask": []

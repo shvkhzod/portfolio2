@@ -7,7 +7,7 @@
     </a>
 
     <div class="list">
-      <button 
+      <button
         class="toggle"
         on:click={toggleTheme}
       >
@@ -20,8 +20,8 @@
       <a href="/projects">
         <p>Works</p>
       </a>
-      <a href="/books">
-        <p>Books</p>
+      <a href="/photos">
+        <p>Photos</p>
       </a>
       <a href="/thoughts">
         <p>Thoughts</p>
@@ -181,6 +181,8 @@ onMount(() => {
     padding: 8px 12px;
     border: none;
     transition: background-color 0.4s ease-in-out;
+    position: relative;
+    top: 2px;
   }
 
   button:hover,
@@ -188,7 +190,7 @@ onMount(() => {
     background-color: var(--hover-bg-color);
   }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .list {
       gap: 8px;
     }
